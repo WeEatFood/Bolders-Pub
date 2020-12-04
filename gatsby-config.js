@@ -7,11 +7,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${ __dirname }/src/images`
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${ __dirname }/src/images`
+        name: `backgrounds`,
+        path: `${ __dirname }/src/images/Restaurant`
       }
     },
     `gatsby-transformer-sharp`,
