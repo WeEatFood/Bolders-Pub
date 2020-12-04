@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Header from "./header";
+import Header from "./navbar";
 
 import "normalize.css";
+import "../../dist/bootstrap.min.css";
 import "../scss/_config.scss";
-import "./bootstrap.min.css";
-// import "./layout.css";
 
 const Layout = ({ children }) => (
   <>

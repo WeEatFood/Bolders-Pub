@@ -1,6 +1,7 @@
 @import "_config";
 
 .navbar {
+  box-sizing: border-box;
   background-color: $tan;
   color: $dark-gray;
   font-family: $review-header-font;
@@ -9,6 +10,8 @@
   z-index: 1000;
 
 }
+
+// TODO media queries for the menu links
 
 .logo {
   z-index: 10000;
@@ -20,12 +23,27 @@
 .navbar--right {
   color: $medblue !important;
 }
+
 .navbar__link {
   transform: translateX(12.5rem);
   color: $medblue !important;
 
   &:hover {
     color: $white;
+  }
+
+  #dropdown {
+    text-transform: uppercase;
+    color: $medblue !important;
+
+    // TODO fix children hover
+    #dropdown > *:hover {
+      background-color: $medblue;
+    }
+  }
+
+  #toggle {
+    background-color: white;
   }
 
 }

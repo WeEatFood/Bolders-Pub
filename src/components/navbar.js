@@ -1,11 +1,10 @@
 import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
-// import { LinkContainer } from "react-router-bootstrap"
 import { Link } from "gatsby";
 import Logo from "../images/bolderlogo.png";
 import "../scss/navbar.scss";
 
-const Header = () => (
+const Navbar = () => (
   <header className="container__navbar">
     <Link
       to="/">
@@ -17,10 +16,8 @@ const Header = () => (
     <ReactBootStrap.Navbar
       className="navbar"
       collapseOnSelect
-      expand="xl"
-      variant="dark">
-      <ReactBootStrap.Navbar.Toggle
-        aria-controls="responsive-navbar-nav" />
+      expand="md"
+      variant="light">
       <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <ReactBootStrap.Nav className="mr-auto">
           <Link className to="/booking">
@@ -34,11 +31,22 @@ const Header = () => (
               ORDER ONLINE
             </ReactBootStrap.Nav.Link>
           </Link>
-          <Link to="/menu">
-            <ReactBootStrap.Nav.Link className="navbar__link">
-              MENU
-            </ReactBootStrap.Nav.Link>
-          </Link>
+          <ReactBootStrap.NavDropdown title="menu" id="dropdown"
+                                      className="navbar__link">
+            <ReactBootStrap.NavDropdown.Item
+              href="#action/3.1">Appetizers</ReactBootStrap.NavDropdown.Item>
+            <ReactBootStrap.NavDropdown.Item
+              href="#action/3.4">Dessert</ReactBootStrap.NavDropdown.Item>
+            <ReactBootStrap.NavDropdown.Item
+              href="#action/3.4">Kitchen</ReactBootStrap.NavDropdown.Item>
+            <ReactBootStrap.NavDropdown.Divider />
+            <ReactBootStrap.NavDropdown.Item
+              href="#action/3.3">Cocktails</ReactBootStrap.NavDropdown.Item>
+            <ReactBootStrap.NavDropdown.Item
+              href="#action/3.2">Brewery</ReactBootStrap.NavDropdown.Item>
+            <ReactBootStrap.NavDropdown.Item
+              href="#action/3.4">Wine</ReactBootStrap.NavDropdown.Item>
+          </ReactBootStrap.NavDropdown>
           <Link to="/info">
             <ReactBootStrap.Nav.Link className="navbar__link">
               INFO
@@ -59,9 +67,11 @@ const Header = () => (
           </Link>
         </ReactBootStrap.Nav>
       </ReactBootStrap.Navbar.Collapse>
+      <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle"
+      style={{zIndex: "10"}}/>
     </ReactBootStrap.Navbar>
   </header>
 );
 
-export default Header;
+export default Navbar;
 
