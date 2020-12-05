@@ -16,12 +16,12 @@ const Layout = ({ children }) => (
     } }>
       <div className="main-footer">
         <div className="container">
-            <div className="icons">
-              <FaFacebookSquare className="icon"/>
-              <FaYelp className="icon"/>
-              <FaInstagramSquare className="icon"/>
-              <FaGithubSquare className="icon"/>
-            </div>
+          <div className="icons">
+            <FaFacebookSquare className="icon"/>
+            <FaYelp className="icon"/>
+            <FaInstagramSquare className="icon"/>
+            <FaGithubSquare className="icon"/>
+          </div>
           <div className="row">
             <div className="col">
               <ui className="list-unstyled">
