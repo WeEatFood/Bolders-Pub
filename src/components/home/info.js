@@ -1,5 +1,7 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'gatsby';
+import '../../scss/home.scss';
 
 const Info = () => (
   <section className="py-5">
@@ -16,9 +18,9 @@ const Info = () => (
             doloribus dolorum enim et ex, fuga id impedit ipsa natus non perspiciatis placeat possimus sint voluptatum!
           </p>
           <Link to="#">
-            <button className="btn text-uppercase btn-yellow">
+            <Button className="home-info__btn" variant="">
               about page
-            </button>
+            </Button>
           </Link>
         </div>
       </div>
