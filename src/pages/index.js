@@ -1,9 +1,11 @@
-import React from 'react'
-import { Carousel, Container } from 'react-bootstrap'
-import BackgroundImage from 'gatsby-image'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import '.././scss/home.scss'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { Carousel, Container } from 'react-bootstrap';
+import BackgroundImage from 'gatsby-image';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Info from '../components/home/info';
+import '.././scss/home.scss';
 
 const IndexPage = (props) => (
   <Layout>
@@ -13,8 +15,10 @@ const IndexPage = (props) => (
       <Carousel className='carousel__item-container'>
         <Carousel.Item>
           <BackgroundImage fluid={ props.data.slide1.childImageSharp.fluid }
-                           alt='first restaurant image'/>
-          <Carousel.Caption className='carousel__caption'>
+                           alt='first restaurant image'
+                           className="carousel__image"
+          />
+          <Carousel.Caption>
             <h3>-Star Magazine</h3>
             <p>This restaurant is the best in North-West Colorado! Stop by if
               your in the boulder area</p>
@@ -22,7 +26,9 @@ const IndexPage = (props) => (
         </Carousel.Item>
         <Carousel.Item>
           <BackgroundImage fluid={ props.data.slide2.childImageSharp.fluid }
-                           alt='second restaurant image'/>
+                           alt='second restaurant image'
+                           className="carousel__image"
+          />
           <Carousel.Caption className="carousel__caption">
             <h3>-Rolling Stones</h3>
             <p>They got beer and lots of it!!</p>
@@ -30,7 +36,9 @@ const IndexPage = (props) => (
         </Carousel.Item>
         <Carousel.Item>
           <BackgroundImage fluid={ props.data.slide3.childImageSharp.fluid }
-                           alt='third restaurant image'/>
+                           alt='third restaurant image'
+                           className="carousel__image"
+          />
           <Carousel.Caption className="carousel__caption">
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl
@@ -39,7 +47,9 @@ const IndexPage = (props) => (
         </Carousel.Item>
         <Carousel.Item>
           <BackgroundImage fluid={ props.data.slide4.childImageSharp.fluid }
-                           alt='fourth restaurant image'/>
+                           alt='fourth restaurant image'
+                           className="carousel__image"
+          />
           <Carousel.Caption className="carousel__caption">
             <h3>Fourth slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl
@@ -48,10 +58,11 @@ const IndexPage = (props) => (
         </Carousel.Item>
       </Carousel>
     </Container>
+    <Info/>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const data = graphql`
 	query {
@@ -84,5 +95,5 @@ export const data = graphql`
 			}
 		}
 	}
-`
+`;
 

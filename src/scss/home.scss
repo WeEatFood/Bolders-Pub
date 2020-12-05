@@ -1,9 +1,6 @@
 @import "config";
 
 .carousel__container {
-  min-width: 100vh;
-  //width: 100vw;
-  margin: 0;
   z-index: $zindexBackdrop;
 
   .carousel__item-container {
@@ -14,10 +11,13 @@
     transform: translate(-50%, -50%);
   }
 
-  .default-background {
-    min-height: 100vh;
+  .carousel__image {
+    height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) center;
+    background-size: cover;
   }
 
   .d-block {
