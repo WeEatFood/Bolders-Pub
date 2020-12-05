@@ -15,6 +15,11 @@ const Info = () => (
             nobis possimus quod soluta. Blanditiis excepturi harum nesciunt nihil qui! Accusamus ad autem cupiditate
             doloribus dolorum enim et ex, fuga id impedit ipsa natus non perspiciatis placeat possimus sint voluptatum!
           </p>
+          <Link to="#">
+            <button className="btn text-uppercase btn-yellow">
+              about page
+            </button>
+          </Link>
         </div>
       </div>
     </div>

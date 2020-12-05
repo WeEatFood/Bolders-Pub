@@ -14,11 +14,11 @@ $base-img-logo: '/assets/boulderlogo.png';
 
 // Color palette
 //-----------------------------
-$lightblue: #a8dde6;
+$lightblue: #A8DDE6;
 $medblue: #374785;
-$tan: #f8e9a1;
-$salmon: #f76c6c;
-$navyblue: #24305e;
+$tan: #F8E9A1;
+$salmon: #F76C6C;
+$navyblue: #24305E;
 
 // Button mixens
 
@@ -112,18 +112,18 @@ $mdc-typography-styles-caption: (
 
 // Font mixins
 
-@mixin review-header(){
+@mixin review-header() {
   font-family: $comment-test-font;
-  font-size: 16px;
+  font-size: 36px;
   font-weight: normal;
   letter-spacing: 0.15px;
   color: $white;
 
 }
 
-@mixin review-text(){
+@mixin review-text() {
   font-family: $accent-font-family;
-  font-size: 12px;
+  font-size: 24px;
   font-weight: normal;
   letter-spacing: 0.4px;
   color: $white;
