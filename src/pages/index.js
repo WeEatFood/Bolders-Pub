@@ -1,16 +1,20 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Col, Container, Image } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Info from '../components/home/info';
+import HomeImg1 from '../images/Food/burgerhome.jpg';
+import HomeImg2 from '../images/Food/wine2.jpg';
+import HomeImg3 from '../images/Food/open.jpg';
 import '.././scss/home.scss';
 
 const IndexPage = (props) => (
   <Layout>
     <SEO title='Home'
          keywords={ [`gatsby`, `restaurant`, `react`, `group projects`] }/>
+    <Container className="home__container">
     <Carousel className='carousel__item-container'>
       <Carousel.Item>
         <BackgroundImage fluid={ props.data.slide1.childImageSharp.fluid }
@@ -57,6 +61,22 @@ const IndexPage = (props) => (
       </Carousel.Item>
     </Carousel>
     <Info/>
+    <section className="py-5">
+      <div className="home__image-container">
+        <div className="row">
+          <Col xs={ 6 } md={ 4 }>
+            <Image src={ HomeImg3 } alt="food" fluid/>
+          </Col>
+          <Col xs={ 6 } md={ 4 }>
+            <Image src={ HomeImg1 } alt="food" fluid/>
+          </Col>
+          <Col xs={ 6 } md={ 4 }>
+            <Image src={ HomeImg2 } alt="food" fluid/>
+          </Col>
+        </div>
+      </div>
+    </section>
+    </Container>
   </Layout>
 );
 
@@ -92,7 +112,6 @@ export const data = graphql`
 				}
 			}
 		}
-    
 	}
 `;
 

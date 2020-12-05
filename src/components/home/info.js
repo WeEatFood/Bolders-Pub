@@ -19,7 +19,7 @@ const Info = () => (
           </p>
           <Link to="#">
             <Button className="home-info__btn" variant="">
-              about page
+              about us
             </Button>
           </Link>
         </div>

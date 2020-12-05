@@ -2,13 +2,13 @@
 
 .main-footer {
   color: #000000;
-  //background-color: $gray;
   background-color: rgba(248, 233, 161, 0.3);
   font-family: $accent-font-family;
   position: relative;
-  padding-top: 3em;
   bottom: 0;
+  padding-top: 3em;
   width: 100%;
+  //z-index: 0;
 }
 
 img {
@@ -24,6 +24,9 @@ img {
   justify-content: end;
 }
 
+.icons {
+  max-width: 25%;
+}
 .icon {
   margin: 0 .5em 1em;
 }
