@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import OnlineItems from '../components/online-menu/online';
 
+
 const OnlineMenu = ({ data }) => (
   <Layout>
     <SEO title="Online Menu" keywords={[`gatsby`, `food`, `react`, `order`]} />
@@ -27,7 +28,7 @@ export const data = graphql`
           category
           image {
             fixed(width: 100, height: 50) {
-              ...GatsbyContentfulFixed_tracedSVG
+              ...GatsbyContentfulFixed
             }
           }
         }

@@ -1,5 +1,13 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import '../../scss/online.scss';
+
+const getCategories = items => {
+  let tempItems = items.map(items => {
+    return items.node.category;
+  });
+  return tempItems;
+};
 
 export default class OnlineItems extends React.Component {
   constructor(props) {
@@ -8,21 +16,32 @@ export default class OnlineItems extends React.Component {
     this.state = {
       items: props.items.edges,
       menuItems: props.items.edges,
+      categories: getCategories(props.items.edges),
     };
   }
 
   render() {
     if (this.state.items.length > 0) {
       return (
-        <section className="online-menu py-5">
-          <div className="online-menu__container">
-            <title title="Online-menu">Title</title>
+        <section className="online__menu py-5">
+          <div className="online__menu__container">
+            <h1>Online-Menu</h1>
+            <h4>Order something nice for yourself</h4>
             <div className="row">
               {this.state.menuItems.map(({ node }) => {
                 return (
                   <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
                     <div>
-                      <Img fixed={node.image.fixed} />
+                      <Img fixed={node.image.fixed} className="online__image" />
+                    </div>
+                    <div className="flex-grow-1 px-3">
+                      <div className="d-flex justify-content-between">
+                        <h6 id="title">{node.title}</h6>
+                        <h6 id="price">${node.price}</h6>
+                      </div>
+                      <p className="text-muted text-left">
+                        <p>{node.desc.desc}</p>
+                      </p>
                     </div>
                   </div>
                 );

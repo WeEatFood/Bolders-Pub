@@ -17,24 +17,25 @@ $base-img-logo: '/assets/boulderlogo.png';
 $lightblue: #A8DDE6;
 $medblue: #374785;
 $tan: #F8E9A1;
-$salmon: #F76C6C;
-$navyblue: #24305E;
+$gold: #c99e10;
+$forest: #1e434c;
+$rust: #9b4f0f;
+$crimson: #8d230f;
 
 // Button mixens
 
 
-// Primary colors
+// Text colors
 //-----------------------------
-$blue: #3481CF;
 $white: #FFFFFF;
 $black: #000000;
-$gray: #7F7F7F;
+$gray: #A09A9A;
 
 // Derivative colors
 //-----------------------------
-$dark-gray: darken($gray, 23.14%);
-$darker-gray: darken($dark-gray, 6.6667%);
-$darkest-gray: darken($dark-gray, 17.25%);
+$dark-gray: darken($gray, 10%);
+$darker-gray: darken($gray, 30%);
+$darkest-gray: darken($gray, 90%);
 
 $darker-blue: darken($lightblue, 40.0%);
 
