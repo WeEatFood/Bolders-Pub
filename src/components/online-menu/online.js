@@ -75,6 +75,9 @@ export default class OnlineItems extends React.Component {
                       <p className="text-muted text-left">
                         <p>{node.desc.desc}</p>
                       </p>
+                      <button className="online__btn btn mt-3 text-capitalize">
+                        add to cart
+                      </button>
                     </div>
                   </div>
                 );

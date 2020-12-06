@@ -4,20 +4,20 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import OnlineItems from '../components/online-menu/online';
-import { Disqus } from 'gatsby-plugin-disqus';
+import  Disqus  from 'disqus-react';
 
-const OnlineMenu = ({ data }, props) => {
-  const disqusShortName = process.env.GATSBY_DISQUS_NAME;
+const OnlineMenu = ({ data }) => {
+  const disqusShortName = 'bolderspub';
   const disqusConfig = {
-    url: `http://localhost:8000/${props.location}`,
-    identifier: `${props.location}`,
+    url: `http://localhost:8000`,
+    identifier: `nothing`,
     title: 'everything',
   };
   return (
     <Layout>
       <SEO title="Online Menu" keywords={[`gatsby`, `food`, `react`, `order`]} />
       <OnlineItems items={data.menu} />
-      <Disqus config={disqusConfig} shortname={disqusShortName} />
+      <Disqus.DiscussionEmbed config={disqusConfig} shortname={disqusShortName} />
     </Layout>
   );
 };

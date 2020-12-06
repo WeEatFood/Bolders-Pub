@@ -6,10 +6,10 @@ module.exports = {
     title: `src/images/bolderlogo.png`,
     description: `Looking for somewhere to eat in Boulder CO? Look no further than Bolders Pub! We offer something for everyone!`,
     author: `@Matt McCarthy`,
-    siteUrl: `http://localhost:8000`,
-    disqus: {
-      shortName: process.env.GATSBY_DISQUS_NAME,
-    },
+    // siteUrl: `http://localhost:8000`,
+    // disqus: {
+    //   shortName: process.env.GATSBY_DISQUS_NAME,
+    // },
   },
   plugins: [
     `gatsby-plugin-sass`,
