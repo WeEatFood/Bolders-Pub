@@ -6,20 +6,18 @@ import SEO from '../components/seo';
 import OnlineItems from '../components/online-menu/online';
 import { Disqus } from 'gatsby-plugin-disqus';
 
-const OnlineMenu = ({ data }) => {
-  // const { markdownRemark: post } = data;
-
+const OnlineMenu = ({ data }, props) => {
+  const disqusShortName = process.env.GATSBY_DISQUS_NAME;
   const disqusConfig = {
-    url: `http://localhost:8000`,
-    identifier: 'nothing',
-    title: 'nothin',
+    url: `http://localhost:8000/${props.location}`,
+    identifier: `${props.location}`,
+    title: 'everything',
   };
-
   return (
     <Layout>
       <SEO title="Online Menu" keywords={[`gatsby`, `food`, `react`, `order`]} />
       <OnlineItems items={data.menu} />
-      <Disqus config={disqusConfig} />
+      <Disqus config={disqusConfig} shortname={disqusShortName} />
     </Layout>
   );
 };
