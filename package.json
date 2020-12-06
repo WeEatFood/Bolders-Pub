@@ -20,6 +20,7 @@
     "gatsby-source-contentful": "^4.2.0",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-sharp": "^2.6.0",
+    "lodash": "^4.17.20",
     "mapbox-gl": "^1.13.0",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
@@ -37,6 +38,7 @@
     "sass-loader": "^10.1.0"
   },
   "devDependencies": {
+    "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
     "prettier": "2.1.2",
     "react-lazy-load": "^3.1.13"

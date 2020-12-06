@@ -4,14 +4,22 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import OnlineItems from '../components/online-menu/online';
-import PostTemplate from '../components/online-menu/postTemplate';
+import { Disqus } from 'gatsby-plugin-disqus';
 
 const OnlineMenu = ({ data }) => {
+  // const { markdownRemark: post } = data;
+
+  const disqusConfig = {
+    url: `http://localhost:8000`,
+    identifier: 'nothing',
+    title: 'nothin',
+  };
+
   return (
     <Layout>
       <SEO title="Online Menu" keywords={[`gatsby`, `food`, `react`, `order`]} />
       <OnlineItems items={data.menu} />
-      <PostTemplate />
+      <Disqus config={disqusConfig} />
     </Layout>
   );
 };
