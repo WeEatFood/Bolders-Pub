@@ -6,7 +6,10 @@ const getCategories = items => {
   let tempItems = items.map(items => {
     return items.node.category;
   });
-  return tempItems;
+  let tempCategories = new Set(tempItems);
+  let categories = Array.from(tempCategories);
+  categories = ['all', ...categories];
+  return categories;
 };
 
 export default class OnlineItems extends React.Component {
@@ -20,12 +23,42 @@ export default class OnlineItems extends React.Component {
     };
   }
 
+  handleItems = category => {
+    let tempItems = [...this.state.items];
+    if (category === 'all') {
+      this.setState(() => {
+        return { menuItems: tempItems };
+      });
+    } else {
+      let items = tempItems.filter(({ node }) => node.category === category);
+      this.setState(() => {
+        return { menuItems: items };
+      });
+    }
+  };
+
   render() {
     if (this.state.items.length > 0) {
       return (
         <section className="online__menu py-5">
           <div className="online__menu__container">
             <h1>Online-Menu</h1>
+            <div className="row mb-5">
+              <div className="col-10 mx-auto text-center">
+                {this.state.categories.map((category, index) => {
+                  return (
+                    <button
+                      type="button"
+                      key={index}
+                      className="online-menu__btn btn text-capitalize"
+                      onClick={() => this.handleItems(category)}
+                    >
+                      {category}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
             <h4>Order something nice for yourself</h4>
             <div className="row">
               {this.state.menuItems.map(({ node }) => {
