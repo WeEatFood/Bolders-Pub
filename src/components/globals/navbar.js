@@ -1,8 +1,8 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'gatsby';
-import Logo from '../images/bolderlogo.png';
-import '../scss/navbar.scss';
+import Logo from '../../images/bolderlogo.png';
+import '../../scss/navbar.scss';
 
 const NavBar = () => (
   <header className="container__navbar">

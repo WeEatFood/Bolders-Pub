@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import { FaCartArrowDown } from 'react-icons/fa';
 import '../../scss/online.scss';
 
 const getCategories = items => {
@@ -43,6 +44,18 @@ export default class OnlineItems extends React.Component {
         <section className="online__menu py-5">
           <div className="online__menu__container">
             <h1>Online-Menu</h1>
+            <li
+              className="nav-item ml-sm-5"
+              style={{
+                zIndex: '13',
+                listStyle: 'none',
+                width: '5rem',
+              }}
+            >
+              <FaCartArrowDown className="cart-icon snipcart-checkout" />
+              <span className="snipcart-items-count"></span>
+              <span className="snipcart-total-price"></span>
+            </li>
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">
                 {this.state.categories.map((category, index) => {
@@ -75,7 +88,15 @@ export default class OnlineItems extends React.Component {
                       <p className="text-muted text-left">
                         <p>{node.desc.desc}</p>
                       </p>
-                      <button className="online__btn btn mt-3 text-capitalize">
+                      <button
+                        className="online__btn btn mt-3 text-capitalize snipcart-add-item"
+                        data-item-id={node.id}
+                        data-item-name={node.title}
+                        data-item-price={node.price}
+                        data-item-url="https://bolderspub.netlify.app/online-menu"
+                        data-item-image={node.image.fixed.src}
+                        data-item-description={node.desc}
+                      >
                         add to cart
                       </button>
                     </div>

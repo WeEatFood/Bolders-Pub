@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './navbar';
+import Header from './globals/navbar';
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaYelp } from 'react-icons/fa';
 import 'normalize.css';
 import '../../dist/bootstrap.min.css';
