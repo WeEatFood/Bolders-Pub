@@ -64,11 +64,15 @@
 }
 
 .carousel__img-container:hover .sliderz {
+  //filter: blur(6px);
   opacity: 0.3;
+  //filter: grayscale(50%);
+  //filter: sepia(100%);
   //filter: hue-rotate(180deg);
-  fill: red;
+  //filter: invert(140%);
 
 }
+
 .carousel__img-container:hover .carousel__img-btn {
   opacity: 1;
 }
@@ -90,7 +94,6 @@
   letter-spacing: 1px;
   color: #282727;
   margin: 1.5em 0 0 1em;
-
 
   &:hover {
     background-color: transparent;
