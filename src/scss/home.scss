@@ -65,6 +65,9 @@
 
 .carousel__img-container:hover .sliderz {
   opacity: 0.3;
+  //filter: hue-rotate(180deg);
+  fill: red;
+
 }
 .carousel__img-container:hover .carousel__img-btn {
   opacity: 1;
