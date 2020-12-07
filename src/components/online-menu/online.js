@@ -53,8 +53,8 @@ export default class OnlineItems extends React.Component {
               }}
             >
               <FaCartArrowDown className="cart-icon snipcart-checkout" />
-              <span className="snipcart-items-count"></span>
-              <span className="snipcart-total-price"></span>
+              {/*<span className="snipcart-items-count"></span>*/}
+              {/*<span className="snipcart-total-price"></span>*/}
             </li>
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">

@@ -14,7 +14,6 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title='Home'
          keywords={ [`gatsby`, `restaurant`, `react`, `group projects`] }/>
-    <Container className="home__container">
     <Carousel className='carousel__item-container'>
       <Carousel.Item>
         <BackgroundImage fluid={ props.data.slide1.childImageSharp.fluid }
@@ -61,7 +60,6 @@ const IndexPage = (props) => (
       </Carousel.Item>
     </Carousel>
     <Info/>
-    <section className="py-5">
       <div className="home__image-container">
         <div className="row">
           <Col xs={ 6 } md={ 4 }>
@@ -75,8 +73,6 @@ const IndexPage = (props) => (
           </Col>
         </div>
       </div>
-    </section>
-    </Container>
   </Layout>
 );
 

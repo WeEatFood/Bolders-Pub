@@ -3,7 +3,7 @@
 .carousel__image {
   min-height: 100%;
   max-height: 100%;
-  position: absolute;
+  //position: absolute;
   top: auto;
   bottom: auto;
   left: auto;
@@ -44,11 +44,7 @@
 
 .home__image-container {
   max-width: 100vw;
-  margin-right: 0;
-  margin-bottom: 13em;
-  //position: relative;
-  padding: 0;
-  //padding-bottom: 60em;
+  margin-bottom: 0;
 }
 
 Image {
@@ -61,8 +57,6 @@ Image {
   width: 100vw;
   padding: 0;
   margin: 0;
-  position: relative;
-  box-sizing: border-box !important;
 }
 
 .carousel__item-container {
