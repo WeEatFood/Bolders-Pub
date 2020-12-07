@@ -3,16 +3,12 @@
 .carousel__image {
   min-height: 100%;
   max-height: 100%;
-  //position: absolute;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) center;
   background-size: cover;
+  position: relative;
 }
 
 .carousel__caption {
@@ -42,18 +38,26 @@
   }
 }
 
-.home-sliderz-container {
-  //width: 100vw;
-  //height: 20rem;
+.home-sliderz__container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 20rem;
+  position: relative;
 }
 
 .sliderz {
   //width: 2rem;
-  max-width: 8rem;
-  z-index: 15;
+  height: 20rem;
+  //z-index: 15;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .home__container {
+
 }
 
 .carousel__item-container {
