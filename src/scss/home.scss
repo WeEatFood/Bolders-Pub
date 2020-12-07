@@ -66,27 +66,19 @@
 .carousel__img-container:hover .sliderz {
   opacity: 0.3;
 }
-.carousel__img-container:hover .carousel__img-middle {
+.carousel__img-container:hover .carousel__img-btn {
   opacity: 1;
 }
-.carousel__img-btn {
-  height: 40px;
-  width: 78px;
-}
 
-.carousel__img-middle {
+.carousel__img-btn {
+  width: 8rem;
+  height: 4.6rem;
   transition: 0.5s ease;
   opacity: 0;
+  margin: 0;
   position: absolute;
-  //top: calc((200px / 2) - (40px / 2)); /* Half image height minus half button height */
-  //left: calc((320px / 2) - (78px / 2)); /* Half image width minus half button width */
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
-  //transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);;
 }

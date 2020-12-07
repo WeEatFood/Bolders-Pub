@@ -66,21 +66,15 @@ const IndexPage = props => (
       <div className="row justify-content-center">
         <div className="col-3 carousel__img-container">
           <img src={HomeImg3} alt="food" className="sliderz" />
-          <div className="carousel__img-middle">
             <button className="carousel__img-btn">button</button>
-          </div>
         </div>
         <div className="col-3 carousel__img-container">
           <img src={HomeImg1} alt="food" className="sliderz" />
-          <div className="carousel__img-middle">
             <button className="carousel__img-btn">button</button>
-          </div>
         </div>
         <div className="col-3 carousel__img-container">
           <img src={HomeImg2} alt="food" className="sliderz" />
-          <div className="carousel__img-middle">
             <button className="carousel__img-btn">button</button>
-          </div>
         </div>
       </div>
     </div>
