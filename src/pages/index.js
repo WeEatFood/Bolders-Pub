@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Button } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -66,15 +66,21 @@ const IndexPage = props => (
       <div className="row justify-content-center">
         <div className="col-3 carousel__img-container">
           <img src={HomeImg3} alt="food" className="sliderz" />
-            <button className="carousel__img-btn">button</button>
+          <Button className="carousel__img-btn" >
+            Info
+          </Button>
         </div>
         <div className="col-3 carousel__img-container">
           <img src={HomeImg1} alt="food" className="sliderz" />
-            <button className="carousel__img-btn">button</button>
+          <Button className="carousel__img-btn">
+            Menu
+          </Button>
         </div>
         <div className="col-3 carousel__img-container">
           <img src={HomeImg2} alt="food" className="sliderz" />
-            <button className="carousel__img-btn">button</button>
+          <Button className="carousel__img-btn">
+            Drinks
+          </Button>
         </div>
       </div>
     </div>
