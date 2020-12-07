@@ -65,9 +65,11 @@ const IndexPage = props => (
       </Carousel>
       <Info />
       <div className="home-sliderz__container">
+        <div className="row">
         <img src={HomeImg3} alt="food" className="sliderz" />
         <img src={HomeImg1} alt="food" className="sliderz" />
         <img src={HomeImg2} alt="food" className="sliderz" />
+        </div>
       </div>
     </div>
   </Layout>
