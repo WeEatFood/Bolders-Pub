@@ -1,12 +1,13 @@
 import React from 'react';
-import { Router, Link } from '@reach/router';
+import { Router } from '@reach/router';
+import { Link } from 'gatsby';
 import { Button } from 'react-bootstrap';
-import Appetizers from '../components/menu/appetizers';
-import Brewery from '../components/menu/brewery';
-import Cocktails from '../components/menu/cocktails';
-import Dessert from '../components/menu/dessert';
-import Kitchen from '../components/menu/kitchen';
-import Wine from '../components/menu/wine';
+import Appetizers from './menu/appetizers';
+import Brewery from './menu/brewery';
+import Cocktails from './menu/cocktails';
+import Dessert from './menu/dessert';
+import Kitchen from './menu/kitchen';
+import Wine from './menu/wine';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import '../scss/menu.scss';
@@ -49,13 +50,13 @@ const Menu = () => (
           </Button>
         </Link>
         <div className="menu__items">
-          <Router>
-            <Appetizers path="/menu/appetizers" component={Appetizers} />
-            <Brewery path="/menu/brewery" component={Brewery} />
-            <Cocktails path="/menu/cocktails" component={Cocktails} />
-            <Dessert path="/menu/dessert" component={Dessert} />
-            <Kitchen path="/menu/kitchen" component={Kitchen} />
-            <Wine path="/menu/wine" component={Wine} />
+          <Router basepath="/menu">
+            <Appetizers path="/appetizers" component={Appetizers} />
+            <Brewery path="/brewery" component={Brewery} />
+            <Cocktails path="/cocktails" component={Cocktails} />
+            <Dessert path="/dessert" component={Dessert} />
+            <Kitchen path="/kitchen" component={Kitchen} />
+            <Wine path="/wine" component={Wine} />
           </Router>
         </div>
       </div>
