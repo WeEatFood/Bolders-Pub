@@ -9,18 +9,20 @@ import '../scss/layout.scss';
 
 const Layout = ({ children }) => (
   <>
-    <Header/>
-    <main>{ children }</main>
-    <footer style={ {
-      marginTop: `2em`
-    } }>
+    <Header />
+    <main>{children}</main>
+    <footer
+      style={{
+        marginTop: `2em`,
+      }}
+    >
       <div className="main-footer">
         <div className="container">
           <div className="icons">
-            <FaFacebookSquare className="icon"/>
-            <FaYelp className="icon"/>
-            <FaInstagramSquare className="icon"/>
-            <FaGithubSquare className="icon"/>
+            <FaFacebookSquare className="icon" />
+            <FaYelp className="icon" />
+            <FaInstagramSquare className="icon" />
+            <FaGithubSquare className="icon" />
           </div>
           <div className="row">
             <div className="col">
@@ -48,11 +50,11 @@ const Layout = ({ children }) => (
               </ui>
             </div>
           </div>
-          <hr/>
+          <hr />
           <div className="row">
             <p className="col-sm">
-              &copy;{ new Date().getFullYear() }, Built and designed by Matt and Khai | All rights reserved | Terms Of
-              Service | Privacy
+              &copy;{new Date().getFullYear()}, Built and designed by Matt and Khai | All rights
+              reserved | Terms Of Service | Privacy
             </p>
           </div>
         </div>
@@ -62,7 +64,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
