@@ -7,13 +7,12 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: auto;
+  height: 200vh;
+  position: relative;
 
   .sidebarStyle {
     display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     margin: 12px;
     background: #404040;
     color: #ffffff;
@@ -23,13 +22,9 @@
   }
 
   .mapContainer {
-    position: absolute;
     margin: 5rem 0 2rem 2rem;
     width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    height: 20rem;
   }
 
   .info__divider {
@@ -55,4 +50,9 @@
   .info__hours-clock {
     margin-right: 0.25em;
   }
+}
+
+.info__map-container {
+  position: absolute;
+  bottom: 0;
 }

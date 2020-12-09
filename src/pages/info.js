@@ -9,9 +9,9 @@ function Info() {
   return (
     <Layout>
       <div className="info__container">
-        <Map />
-        <Hours />
-        <Subscribe />
+        <Hours className="info__hours-container" />
+        <Map className="info__map-container" />
+        {/*<Subscribe className="info__sub-container" />*/}
       </div>
     </Layout>
   );
