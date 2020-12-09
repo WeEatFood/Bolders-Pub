@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import  mapboxgl  from 'mapbox-gl';
-import '../../scss/info.scss';
+import mapboxgl from 'mapbox-gl';
+import '../../scss/info2.scss';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWF0dHlhZGFkYSIsImEiOiJja2hxd2ptYWYwMTE4MnFvNXFkd2NtanlyIn0.6qCzdr06dzoP5Gp5YLPDJQ';
@@ -41,14 +41,18 @@ class MapBox extends Component {
   render() {
     return (
       <>
-        <div className="sidebarStyle">
-          <div>
-            Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}
-          </div>
-        </div>
-        <div ref={el => (this.mapContainer = el)} className="mapContainer" />
-        <div className="info__divider">
-          <hr className="solid" />
+        {/*<div className="sidebarStyle">*/}
+        {/*<div>*/}
+        {/*  Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}*/}
+        {/*</div>*/}
+        {/*</div>*/}
+        {/*<div ref={el => (this.mapContainer = el)} className="mapContainer" />*/}
+        {/*<div className="info__divider">*/}
+        {/*  <hr className="solid" />*/}
+        {/*</div>*/}
+        <div className="sidebar pad2">Listing</div>
+        <div id="map" class="map pad2">
+          Map
         </div>
       </>
     );
