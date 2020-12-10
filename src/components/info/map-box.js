@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import Hours from './hours';
 import mapboxgl from 'mapbox-gl';
 import '../../scss/info2.scss';
 
@@ -24,8 +25,8 @@ class MapBox extends Component {
       zoom: this.state.zoom,
     });
 
-    map.doubleClickZoom.enable();
-    map.boxZoom.enable();
+    // map.doubleClickZoom.enable();
+    // map.boxZoom.enable();
 
     map.on('move', () => {
       this.setState({
@@ -34,27 +35,29 @@ class MapBox extends Component {
         zoom: map.getZoom().toFixed(2),
       });
     });
-
-    new mapboxgl.Marker().setLngLat([-105.26701, 40.02291]).addTo(map);
+    // new mapboxgl.Marker().setLngLat([-105.26701, 40.02291]).addTo(map);
   }
 
   render() {
     return (
-      <>
+      <div className="map__main-container">
         {/*<div className="sidebarStyle">*/}
-        {/*<div>*/}
-        {/*  Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}*/}
         {/*</div>*/}
-        {/*</div>*/}
-        {/*<div ref={el => (this.mapContainer = el)} className="mapContainer" />*/}
         {/*<div className="info__divider">*/}
         {/*  <hr className="solid" />*/}
         {/*</div>*/}
+        {/*<Hours />*/}
         <div className="sidebar pad2">Listing</div>
-        <div id="map" class="map pad2">
-          Map
+        {/*<div id="map" className="map pad2">*/}
+        {/*  Map*/}
+        {/*</div>*/}
+        <div className="map__container">
+          <div>
+            Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}
+          </div>
+          <div ref={el => (this.mapContainer = el)} id="map" className="map pad2" />
         </div>
-      </>
+      </div>
     );
   }
 }
