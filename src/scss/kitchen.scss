@@ -11,15 +11,9 @@
     border-bottom: 1px solid $tan;
 }
 
-// .kitchen__column--box{
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .mainColumn{
 display: flex;
 flex-direction: row;
-// justify-content: space-between;
 position: relative;
 margin-bottom: 10em;
 }
@@ -45,8 +39,9 @@ margin-bottom: 10em;
 }
 
 .kitchen-item{
-    width: 90%;
-    margin-bottom: 2em;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 .kitchen-item__header{
@@ -64,18 +59,14 @@ margin-bottom: 10em;
 }
 
 .kitchen-item__details--description{
-    width: 60%;
-    text-align: left;
+    width: 35em;
     font-family: $menu-font-family;
     font-size: 1rem;
     color: $darker-blue;
     font-size: 12px;
-    margin: 0 3em;
 }
 
 .kitchen-item__details--price{
-    width: 1rem;
-    // text-align: left;
     font-family: $menu-font-family;
     color: $darker-blue;
     font-size: 9px;
