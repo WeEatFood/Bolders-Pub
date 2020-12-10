@@ -1,0 +1,75 @@
+@import "config";
+
+.kitchen__header{
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: $default-font-family;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $tan;
+}
+
+// .kitchen__column{
+//     width: 80%;
+//     display: flex;
+// 	flex-direction: row;
+// }
+
+.kitchen__column--box{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainColumn{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: relative;
+margin-bottom: 10em;
+}
+
+.columnOne{
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3em;
+}
+
+.columnTwo{
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin: 0 3em;
+}
+
+.kitchen-item__header{
+    text-align: center;
+    font-family: $default-font-family;
+    font-size: 15px;
+    font-weight: thin;
+    color: $darker-gray;
+}
+
+.kitchen-item__details--description{
+    text-align: left;
+    font-family: $menu-font-family;
+    font-size: 1rem;
+    color: $darker-blue;
+    font-size: 12px;
+}
+
+.kitchen-item__details--price{
+    text-align: left;
+    font-family: $menu-font-family;
+    color: $darker-blue;
+    font-size: 9px;
+}
