@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../scss/sub-menu.scss';
 import '../../scss/kitchen.scss'
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout';
@@ -12,52 +11,60 @@ const Kitchen = props => {
 
       <div className="mainColumn">
         <div className="columnOne">
-
           <div className="kitchen__column--box">
 
-            <div className="menu-item">
+            <div className="kitchen-item">
               <h4 className="kitchen-item__header">FIVE CHEESE BOARD</h4>
               <section className="kitchen-item_details">
                 <span className="kitchen-item__details--description">
                   marinated olives, pickled vegetables, crostini, and assorted cheeses</span>
                 <span className="kitchen-item__details--price">15</span>
-
               </section>
             </div>
 
-            <div className="menu-item">
+            <div className="kitchen-item">
               <h4 className="kitchen-item__header">BRICK CHICKEN</h4>
-              <p className="kitchen-item__details--description">
-                pan-roasted crispy airline chicken breast with olive & apricot pan sauce, roasted carrots, & basmati rice</p>
-              <p className="kitchen-item__details--price">17</p>
+              <section className="kitchen-item_details">
+                <span className="kitchen-item__details--description">
+                  pan-roasted crispy airline chicken breast with olive & apricot pan sauce, roasted carrots, & basmati rice</span>
+                <span className="kitchen-item__details--price">17</span>
+              </section>
             </div>
 
-            <div className="menu-item">
+            <div className="kitchen-item">
               <h4 className="kitchen-item__header">BTG STEAK</h4>
-              <p className="kitchen-item__details--description">
-                10 oz. grilled New York Steak wild mushroom Bordelaise</p>
-              <p className="kitchen-item__details--price">24</p>
+              <section className="kitchen-item_details">
+                <span className="kitchen-item__details--description">
+                  10 oz. grilled New York Steak wild mushroom Bordelaise</span>
+                <span className="kitchen-item__details--price">24</span>
+              </section>
             </div>
 
-            <div className="menu-item">
+            <div className="kitchen-item">
               <h4 className="kitchen-item__header">ROSEMARY LAMBCHOPS</h4>
-              <p className="kitchen-item__details--description">
-                Roasted fingerlings, creamed spinach, charred rosemary demi, mint pesto</p>
-              <p className="kitchen-item__details--price">26</p>
+              <section className="kitchen-item_details">
+                <span className="kitchen-item__details--description">
+                  Roasted fingerlings, creamed spinach, charred rosemary demi, mint pesto</span>
+                <span className="kitchen-item__details--price">26</span>
+              </section>
             </div>
 
-            <div className="menu-item">
+            <div className="kitchen-item">
               <h4 className="kitchen-item__header">GRILLED VEGETABLE NEOPOLITAN</h4>
-              <p className="kitchen-item__details--description">
-                Portobello mushroom, grilled asparagus, bourbon caramelized onions, zucchini, yellow squash, fresh mozzarella, roasted garlic smashed, balsamic reduction</p>
-              <p className="kitchen-item__details--price">18</p>
+              <section className="kitchen-item_details">
+                <span className="kitchen-item__details--description">
+                  Portobello mushroom, grilled asparagus, bourbon caramelized onions, zucchini, yellow squash, fresh mozzarella, roasted garlic smashed, balsamic reduction</span>
+                <span className="kitchen-item__details--price">18</span>
+              </section>
             </div>
 
-            <div className="menu-item">
+            <div className="kitchen-item">
               <h4 className="kitchen-item__header">CAJUN SHRIMP PASTA</h4>
-              <p className="kitchen-item__details--description">
-                House fettuccini, shrimp, Tasso ham, andouille, peppers, red onion, basil, pecorino, creole cream</p>
-              <p className="kitchen-item__details--price">18</p>
+              <section className="kitchen-item_details">
+                <span className="kitchen-item__details--description">
+                  House fettuccini, shrimp, Tasso ham, andouille, peppers, red onion, basil, pecorino, creole cream</span>
+                <span className="kitchen-item__details--price">18</span>
+              </section>
             </div>
 
 
