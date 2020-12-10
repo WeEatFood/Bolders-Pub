@@ -65,45 +65,45 @@ const Kitchen = props => {
               <div className="kitchen__column--box">
 
                 <div className="menu-item">
-                  <h4 className="menu-item__header">MEAT & CHEESE BOARD</h4>
-                  <p className="menu-item__details--description">
+                  <h4 className="kitchen-item__header">MEAT & CHEESE BOARD</h4>
+                  <p className="kitchen-item__details--description">
                     cured Creminelli meats & featured cheeses, pickled vegetables, shallot relish, house mustard, & crostini</p>
-                  <p className="menu-item__details--price">24</p>
+                  <p className="kitchen-item__details--price">24</p>
                 </div>
 
                 <div className="menu-item">
                   <h4 className="kitchen-item__header">HONEY BOURBON CHICKEN</h4>
-                  <p className="menu-item__details--description">
+                  <p className="kitchen-item__details--description">
                     Half chicken, honey bourbon mustard sauce, smashed Yukon gold, roasted root vegetable</p>
-                  <p className="menu-item__details--price">22</p>
+                  <p className="kitchen-item__details--price">22</p>
                 </div>
 
                 <div className="menu-item">
                   <h4 className="kitchen-item__header">SEARED HALIBUT</h4>
-                  <p className="menu-item__details--description">
+                  <p className="kitchen-item__details--description">
                     Pesto-bacon smashed, butter braised leeks, tomato confit, Tasso ham jus</p>
-                  <p className="menu-item__details--price">23</p>
+                  <p className="kitchen-item__details--price">23</p>
                 </div>
 
                 <div className="menu-item">
                   <h4 className="kitchen-item__header">KENTUCKY BOURBON SALMON</h4>
-                  <p className="menu-item__details--description">
+                  <p className="kitchen-item__details--description">
                     Kentucky bourbon soy glaze, warm wasabi-bacon potato salad, green beans</p>
-                  <p className="menu-item__details--price">24</p>
+                  <p className="kitchen-item__details--price">24</p>
                 </div>
 
                 <div className="menu-item">
                   <h4 className="kitchen-item__header">SMOKED BRISKET GNOCCHI</h4>
-                  <p className="menu-item__details--description">
+                  <p className="kitchen-item__details--description">
                     House smoked brisket, ricotta gnocchi, wild mushrooms, cognac cream</p>
-                  <p className="menu-item__details--price">22</p>
+                  <p className="kitchen-item__details--price">22</p>
                 </div>
 
                 <div className="menu-item">
                   <h4 className="kitchen-item__header">NEW YORK STEAK AU POIVRE</h4>
-                  <p className="menu-item__details--description">
+                  <p className="kitchen-item__details--description">
                     Black truffle smashed Yukon golds, roasted brussel sprouts, bacon, cabernet demi</p>
-                  <p className="menu-item__details--price">32</p>
+                  <p className="kitchen-item__details--price">32</p>
                 </div>
 
 
