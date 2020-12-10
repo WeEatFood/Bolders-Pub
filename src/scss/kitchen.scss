@@ -32,7 +32,7 @@ margin-bottom: 10em;
 }
 
 .columnOne{
-    width: 40%;
+    width: 45%;
     height: 100%;
     border: 1px solid black;
     display: flex;
@@ -41,7 +41,7 @@ margin-bottom: 10em;
 }
 
 .columnTwo{
-    width: 40%;
+    width: 45%;
     height: 100%;
     border: 1px solid black;
     display: flex;
@@ -59,17 +59,28 @@ margin-bottom: 10em;
     color: $darker-gray;
 }
 
+.kitchen-item__details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5em;
+
 .kitchen-item__details--description{
+    width: 60%;
     text-align: left;
     font-family: $menu-font-family;
     font-size: 1rem;
     color: $darker-blue;
     font-size: 12px;
+    margin: 0 4em;
 }
 
 .kitchen-item__details--price{
+    width: 1rem;
     text-align: left;
     font-family: $menu-font-family;
     color: $darker-blue;
     font-size: 9px;
+    // margin-left: 4em;
 }
+
