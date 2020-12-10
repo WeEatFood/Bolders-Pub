@@ -52,7 +52,7 @@ class MapBox extends Component {
         {/*  Map*/}
         {/*</div>*/}
         <div className="map__container">
-          <div>
+          <div className="map__sidebar pad2">
             Longitude: {this.state.lng} | Latitude: {this.state.lat} | Zoom: {this.state.zoom}
           </div>
           <div ref={el => (this.mapContainer = el)} id="map" className="map pad2" />
