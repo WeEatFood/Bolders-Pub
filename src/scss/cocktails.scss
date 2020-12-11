@@ -1,0 +1,13 @@
+@import "config";
+
+.cocktail__header{
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: $default-font-family;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $tan;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import '../../scss/sub-menu.scss';
 import '../../scss/appetizer.scss';
 import PropTypes from 'prop-types';
 
@@ -14,8 +13,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">CRACKLIN' BISCUITS</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-              Buttermilk biscuits, pork cracklin, smoked cream
-          </p>
+              Buttermilk biscuits, pork cracklin, smoked cream</p>
             <p className="app-item__details--price">8</p>
           </div>
         </div>
@@ -24,8 +22,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">CORNBREAD</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-              Yellow corn, honey, smoked sorghum butter
-          </p>
+              Yellow corn, honey, smoked sorghum butter</p>
             <p className="app-item__details--price">5</p>
           </div>
         </div>
@@ -34,8 +31,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">FRIED BRUSSELS</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-              Sprouts, pickled red onion, radish, soda-pop glaze
-          </p>
+              Sprouts, pickled red onion, radish, soda-pop glaze</p>
             <p className="app-item__details--price">11</p>
           </div>
         </div>
@@ -44,8 +40,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">FRIED PICKLES</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-              Tempura kosher dills, spicy remoulade
-          </p>
+              Tempura kosher dills, spicy remoulade</p>
             <p className="app-item__details--price">7</p>
           </div>
         </div>

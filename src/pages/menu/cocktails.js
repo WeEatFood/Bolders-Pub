@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../scss/sub-menu.scss';
+import '../../scss/cocktails.scss'
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout';
 
@@ -7,7 +8,9 @@ const Cocktails = props => {
   return (
     <Layout>
     <div className="sub__container">
-      <h4 className="sub__header">Cocktails</h4>
+      <h4 className="cocktail__header">Cocktails</h4>
+      <section></section>
+
       <div className="menu-item">
         <h4 className="menu-item__header">OLD FASHIONED</h4>
         <p className="menu-item__details--description">bourbon whiskey, citrus, bitters</p>

@@ -30,4 +30,18 @@
     width: 25rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.dessert-item__details--description{
+    font-family: $menu-font-family;
+    font-size: 1rem;
+    color: $darker-blue;
+    font-size: 12px;
+}
+
+.dessert-item__details--price{
+    font-family: $menu-font-family;
+    color: $darker-blue;
+    font-size: 11px;
 }

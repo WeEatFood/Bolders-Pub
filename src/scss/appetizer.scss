@@ -29,13 +29,12 @@
 
 .app-item__details{
     width: 25rem;
-    // background-color: sandybrown;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .app-item__details--description{
-    // text-align: left;
     font-family: $menu-font-family;
     font-size: 1rem;
     color: $darker-blue;
