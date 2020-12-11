@@ -12,11 +12,12 @@ const Info = () => {
     <Layout>
       <div className="info__main-container">
         <div className="info__top-container">
-          <h1>Info</h1>
+          <h1 id="info__title">Info</h1>
         </div>
-        <img src="https://images.unsplash.com/photo-1578723786984-c5281f7322e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
-        <Hours />
-        <img src={Spec} alt="nothing" />
+        <div className="info__bottom-container">
+          <Hours />
+          <img src={Spec} alt="nothing" id="info__img" />
+        </div>
         <Subscribe />
         <div className="info__map-container">
           <Map />
