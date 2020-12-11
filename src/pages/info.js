@@ -1,14 +1,23 @@
 import React from 'react';
 import Map from '../components/info/map-box';
 import Layout from '../components/layout';
-// import Subscribe from '../components/contact/subscribe';
+import Hours from '../components/info/hours';
+import Specials from '../components/info/specials';
 import '../scss/info2.scss';
+// import Subscribe from '../components/contact/subscribe';
 
 const Info = () => {
   return (
     <Layout>
-      <Map />
-      {/*<Subscribe className="info__sub-container" />*/}
+      <div className="info__main-container">
+        <div className="info__top-container">
+          <Hours />
+          <Specials />
+        </div>
+        <div className="info__map-container">
+          <Map />
+        </div>
+      </div>
     </Layout>
   );
 };

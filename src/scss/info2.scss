@@ -1,15 +1,32 @@
 @import 'config';
 
+.info__main-container {
+}
+
+.info__top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 2px dotted black;
+}
+
+.info__map-container {
+}
+
+.specials__container {
+  position: absolute;
+
+  border: 2px solid black;
+}
 
 .map__main-container {
- height: 100vh;
+  height: 100vh;
   margin-bottom: 10em;
   position: relative;
 }
 
 .sidebar {
   width: 33.3333%;
-
 }
 
 .map {
@@ -40,6 +57,4 @@
 }
 
 .map__sidebar {
-
 }
-

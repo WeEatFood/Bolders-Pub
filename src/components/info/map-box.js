@@ -4,8 +4,7 @@ import MapGl, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import { Icon } from 'semantic-ui-react';
 import '../../scss/info2.scss';
 
-const TOKEN =
-  'pk.eyJ1IjoibWF0dHlhZGFkYSIsImEiOiJja2hxd2ptYWYwMTE4MnFvNXFkd2NtanlyIn0.6qCzdr06dzoP5Gp5YLPDJQ';
+const TOKEN = `pk.eyJ1IjoibWF0dHlhZGFkYSIsImEiOiJja2hxd2ptYWYwMTE4MnFvNXFkd2NtanlyIn0.6qCzdr06dzoP5Gp5YLPDJQ`;
 
 const navStyle = {
   position: 'absolute',
@@ -59,7 +58,7 @@ class MapBox extends Component {
           <p>
             <strong>{markerList[index].name}</strong>
             <br />
-            Avaiable beds: {markerList[index].info}
+            Available beds: {markerList[index].info}
           </p>
         </Popup>
       )
