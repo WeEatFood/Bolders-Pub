@@ -10,7 +10,7 @@ const navStyle = {
   position: 'absolute',
   top: 0,
   left: 0,
-  padding: '1em',
+  padding: 0,
 };
 
 const markerList = [

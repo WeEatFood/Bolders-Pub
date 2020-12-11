@@ -1,27 +1,40 @@
 @import 'config';
 
+.hours__container {
+  position: relative;
+  right: 30%;
+}
 .info__main-container {
+  position: relative;
 }
 
 .info__top-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: 2px dotted black;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1578723786984-c5281f7322e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
 }
 
 .info__map-container {
 }
 
-.specials__container {
-  position: absolute;
 
-  border: 2px solid black;
+.specials__inner-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 10em;
+  background-color: $rust;
+  color: white;
 }
 
 .map__main-container {
   height: 100vh;
-  margin-bottom: 10em;
+  margin-bottom: 0;
   position: relative;
 }
 
@@ -51,10 +64,16 @@
 }
 
 .pad2 {
-  padding: 20px;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .map__sidebar {
+}
+
+.info__hours-container {
+}
+.info__hours-list {
+  list-style-type: none;
 }

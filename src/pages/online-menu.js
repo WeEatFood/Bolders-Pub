@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import OnlineItems from '../components/online-menu/online';
-import  Disqus  from 'disqus-react';
+import Disqus from 'disqus-react';
 
 const OnlineMenu = ({ data }) => {
   const disqusShortName = 'bolderspub';
@@ -13,6 +13,7 @@ const OnlineMenu = ({ data }) => {
     identifier: `nothing`,
     title: 'everything',
   };
+
   return (
     <Layout>
       <SEO title="Online Menu" keywords={[`gatsby`, `food`, `react`, `order`]} />
