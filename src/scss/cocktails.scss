@@ -20,27 +20,58 @@
 }
 
 .columnOne{
-    width: 45%;
+    width: 30%;
     height: 100%;
     border: 1px solid $tan;
     display: flex;
     flex-direction: column;
-    margin: 0 3em;
+    margin: 0 2em;
 }
 
 .columnTwo{
-    width: 45%;
+    width: 30%;
     height: 100%;
     border: 1px solid $tan;
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
-    margin: 0 3em;
+    margin: 0 2em;
+}
+
+.sub__header{
+    color: $darker-gray;
 }
 
 .cocktail-item{
     width: 100%;
     padding: 1em;
-    margin-bottom: 1em;
+}
+
+.cocktail-item__header{
+    text-align: center;
+    font-family: $default-font-family;
+    font-size: 15px;
+    font-weight: thin;
+    color: $darker-gray;
+}
+
+.cocktail-item__details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cocktail-item__details--description{
+    width: 30em;
+    font-family: $menu-font-family;
+    font-size: 1rem;
+    color: $darker-blue;
+    font-size: 12px;
+}
+
+.cocktail-item__details--price{
+    font-family: $menu-font-family;
+    color: $darker-blue;
+    font-size: 10px;
 }
