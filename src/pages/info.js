@@ -11,9 +11,7 @@ const Info = () => {
   return (
     <Layout>
       <div className="info__main-container">
-        <div className="info__top-container">
-          <h1 id="info__title">Info</h1>
-        </div>
+        <div className="info__top-container">{/*<h1 id="info__title">Info</h1>*/}</div>
         <div className="info__bottom-container">
           <Hours />
           <img src={Spec} alt="nothing" id="info__img" />

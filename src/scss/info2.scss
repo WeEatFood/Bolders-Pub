@@ -2,7 +2,7 @@
 
 .hours__container {
   position: relative;
-  right: 30%;
+  right: 70%;
 }
 .info__main-container {
   position: relative;
@@ -19,9 +19,16 @@
 
 #info__title {
   color: white;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 96px;
+  letter-spacing: -1.5px;
+  font-family: $accent-font-family;
 }
 
 .info__bottom-container {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
   margin: 0;
   padding: 0;
