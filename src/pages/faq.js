@@ -1,14 +1,15 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Index from '../components/faq/index';
+import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-function Faq() {
+const Faq = () => {
   return (
     <Layout>
       <SEO title="Page two" />
-      <div>faq</div>
+      <Index />
     </Layout>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;
