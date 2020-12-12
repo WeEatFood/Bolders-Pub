@@ -16,7 +16,6 @@ const Index = () => (
   //             contactless delivery if that’s what you prefer.
   //           </p>
   //         </details>
-  //
   //         <details className="faq__detail">
   //           <summary className="faq__summary">
   //             <span className="faq__question">Does Bolder's Pub offer To Go?</span>
@@ -26,7 +25,6 @@ const Index = () => (
   //             are available, please check our website.
   //           </p>
   //         </details>
-  //
   //         <details className="faq__detail">
   //           <summary className="faq__summary">
   //             <span className="faq__question">
@@ -72,8 +70,9 @@ const Index = () => (
   //     </main>
   //   </div>
   // );
+
   <div className="faq__main-container">
-    <h1>Faq</h1i>
+    <h1>Faq</h1>
     <Container className="faq__container">
       <Accordion>
         <Card>
