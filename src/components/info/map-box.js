@@ -73,26 +73,28 @@ class MapBox extends Component {
         onViewportChange={viewport => this.setState({ viewport })}
         mapStyle="mapbox://styles/mapbox/streets-v11"
         mapboxApiAccessToken={TOKEN}
+        className="map pad2"
+        id="map"
       >
-        <div className="nav" style={navStyle}>
-          <NavigationControl onViewportChange={viewport => this.setState({ viewport })} />
-          {markerList.map((marker, index) => {
-            return (
-              <div key={index}>
-                {' '}
-                <Marker longitude={marker.long} latitude={marker.lat}>
-                  <Icon
-                    name="hospital"
-                    size="big"
-                    onMouseEnter={() => this.setState({ popupInfo: true })}
-                    onMouseLeave={() => this.setState({ popupInfo: null })}
-                  />
-                </Marker>{' '}
-                {this.renderPopup(index)}
-              </div>
-            );
-          })}
-        </div>
+        {/*<div className="nav" style={navStyle}>*/}
+        <NavigationControl onViewportChange={viewport => this.setState({ viewport })} />
+        {markerList.map((marker, index) => {
+          return (
+            <div key={index}>
+              {' '}
+              <Marker longitude={marker.long} latitude={marker.lat}>
+                <Icon
+                  name="hospital"
+                  size="big"
+                  onMouseEnter={() => this.setState({ popupInfo: true })}
+                  onMouseLeave={() => this.setState({ popupInfo: null })}
+                />
+              </Marker>{' '}
+              {this.renderPopup(index)}
+            </div>
+          );
+        })}
+        {/*</div>*/}
       </MapGl>
     );
   }
