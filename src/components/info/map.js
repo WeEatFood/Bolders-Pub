@@ -1,17 +1,10 @@
 import React from 'react';
-import { Jumbotron, Container, Card, Button } from 'react-bootstrap';
-import {
-  FaPhoneAlt,
-  FaRegEnvelope,
-  FaMapMarkerAlt,
-  FaPencilAlt,
-  FaTag,
-  FaUserAlt,
-} from 'react-icons/fa';
+import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { Jumbotron, Container, Card } from 'react-bootstrap';
 import { Clock } from 'react-feather';
 import '../../scss/info.scss';
 
-const MdContact = () => (
+const Map = () => (
   <section className="section pb-5">
     <Jumbotron className="info__jumbo" fluid>
       <Container className="info__container">
@@ -124,4 +117,4 @@ const MdContact = () => (
   </section>
 );
 
-export default MdContact;
+export default Map;

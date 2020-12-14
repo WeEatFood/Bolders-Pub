@@ -16,7 +16,6 @@
     color: $medblue;
   }
 }
-
 .map-container-6{
   overflow:hidden;
   padding-bottom:56.25%;
@@ -29,4 +28,15 @@
   height:100%;
   width:100%;
   position:absolute;
+}
+
+
+.info__form {
+  width: 100%;
+  padding: 0 5em;
+}
+
+.contact__row {
+  position: relative;
+  left: 20%;
 }
