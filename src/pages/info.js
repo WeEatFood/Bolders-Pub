@@ -10,7 +10,9 @@ import Spec from '../images/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
 const Info = () => {
   return (
     <Layout>
-      <Map />
+      <div className="info__container">
+        <Map />
+      </div>
     </Layout>
   );
 };

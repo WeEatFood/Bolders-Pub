@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container, Image } from 'react-bootstrap';
+import { Jumbotron, Container, Card, Button } from 'react-bootstrap';
 import {
   FaPhoneAlt,
   FaRegEnvelope,
@@ -8,34 +8,84 @@ import {
   FaTag,
   FaUserAlt,
 } from 'react-icons/fa';
-import Hours from './hours';
+import { Clock } from 'react-feather';
 import '../../scss/info.scss';
 
 const MdContact = () => (
   <section className="section pb-5">
     <Jumbotron className="info__jumbo" fluid>
       <Container className="info__container">
-        <h1>Fluid jumbotron</h1>
-        <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1>Information</h1>
+        <p className="info__subtitle">
+          This is a modified jumbotron that occupies the entire horizontal space of its parent.
+        </p>
       </Container>
     </Jumbotron>
-    <p className="section-description pb-4">
+    <p className="section-description pb-4 text-center">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure
-      provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur
-      accusamus veniam.
+      provident voluptate esse quasi, <br />
+      veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
+      <br />
     </p>
     <div className="row">
       <div className="col-lg-5 mb-4">
         <div className="card">
-          <div className="card-body">
-            <Hours />
+          <div className="card-body text-center">
+            <Card className="text-center">
+              <Card.Header>Hours of Operation</Card.Header>
+              <Card.Body>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Monday 2 - 12</span>
+                  </ul>
+                </div>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Tuesday 2 - 12</span>
+                  </ul>
+                </div>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Wednesday 2 - 12</span>
+                  </ul>
+                </div>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Thursday 2 - 12</span>
+                  </ul>
+                </div>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Friday 2 - 2</span>
+                  </ul>
+                </div>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Saturday 2 - 2</span>
+                  </ul>
+                </div>
+                <div className="hours-wrap">
+                  <Clock className="info__hours-clock" />
+                  <ul className="">
+                    <span>Sunday Closed</span>
+                  </ul>
+                </div>
+              </Card.Body>
+              <Card.Footer className="text-muted">2 days ago</Card.Footer>
+            </Card>
           </div>
         </div>
       </div>
-      <div className="col-lg-7">
+      <div className="col-lg-7 ">
         <div
           id="map-container-google-11"
-          className="z-depth-1-half map-container-6"
+          className="z-depth-1-half map-container-6 mx-2"
           style={{ height: '400px' }}
         >
           <iframe
@@ -51,7 +101,7 @@ const MdContact = () => (
             <a className="btn-floating blue accent-1">
               <FaMapMarkerAlt />
             </a>
-            <p>San Francisco, CA 94126</p>
+            <p>Boulder, CO 84126</p>
             <p>United States</p>
           </div>
           <div className="col-md-4">

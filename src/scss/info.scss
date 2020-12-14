@@ -1,14 +1,19 @@
 @import 'config';
 
-//
-//.info__jumbo {
-//}
-//
+.info__container {
+  //padding: 3em;
+}
 .info__jumbo {
   background-image: url("https://static.ucraft.app/fs/ucraft/userFiles/preview-soulkitchen/images/r41-curaqtors-bg.jpg?v=1585668431");  background-size: cover;
   color: white;
 }
 
-//.section-description{
-//
-//}
+.hours-wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 6em;
+}
+
+.info__subtitle {
+  color: #ECF0F1;
+}
