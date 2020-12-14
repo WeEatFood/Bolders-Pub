@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Container, Image } from 'react-bootstrap';
 import {
   FaPhoneAlt,
   FaRegEnvelope,
@@ -9,19 +9,15 @@ import {
   FaUserAlt,
 } from 'react-icons/fa';
 import Hours from './hours';
-import '../../scss/contact.scss';
+import '../../scss/info.scss';
 
 const MdContact = () => (
   <section className="section pb-5">
-    <Jumbotron>
-      <h1>Hello, world!</h1>
-      <p>
-        This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-        to featured content or information.
-      </p>
-      <p>
-        <Button variant="primary">Learn more</Button>
-      </p>
+    <Jumbotron className="info__jumbo" fluid>
+      <Container className="info__container">
+        <h1>Fluid jumbotron</h1>
+        <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </Container>
     </Jumbotron>
     <p className="section-description pb-4">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure

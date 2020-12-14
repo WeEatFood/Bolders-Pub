@@ -1,6 +1,6 @@
 import React from 'react';
 import { Clock } from 'react-feather';
-import '../../scss/info2.scss';
+import '../../scss/info.scss';
 
 const Schedule = () => (
   <div className="hours__container">
