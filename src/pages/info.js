@@ -10,18 +10,7 @@ import Spec from '../images/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
 const Info = () => {
   return (
     <Layout>
-      <div className="info__main-container">
-        {/*<div className="info__top-container">/!*<h1 id="info__title">Info</h1>*!/</div>*/}
-        {/*<div className="info__bottom-container">*/}
-        {/*<Hours />*/}
-        {/*<img src={Spec} alt="nothing" id="info__img" />*/}
-        {/*</div>*/}
-        {/*<Subscribe />*/}
-        {/*<div className="info__map-container">*/}
-        <div className="sidebar pad2">Listing</div>
-        <Map />
-        {/*</div>*/}
-      </div>
+      <Map />
     </Layout>
   );
 };
