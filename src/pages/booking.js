@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
-import Map from '../components/info/map-box';
+import Map from '../components/info/map';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import 'react-datepicker/dist/react-datepicker.css';

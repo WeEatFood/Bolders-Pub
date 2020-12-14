@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from '../components/info/map-box';
+import Map from '../components/info/map';
 import Layout from '../components/layout';
 import Hours from '../components/info/hours';
 import Subscribe from '../components/contact/subscribe';
