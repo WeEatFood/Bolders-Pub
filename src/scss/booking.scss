@@ -1,20 +1,51 @@
-@import "config";
+@import 'config';
+
+// Colors
+$bg: #ffcb06;
+$bun: #ff7f07;
+$burger: #d76817;
+$burger-spot: #b34b10;
+$cheese: #edb039;
+$eye: $bun;
+$lettuce: #b3ba27;
+$lettuce-shadow: #7e911d;
+$outline: #701e13;
+$seed: #ffc86d;
+$shadow: #7f6501;
+$tomato: #FF2200;
+$tongue: $tomato;
+
+// Variables
+$burger__figure-w: 128px;
+$outline-w: 7px;
+$animation-duration: 1s;
+
+// Mixins
+@mixin pseudo-shadow {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(black, 0.1);
+}
+
 
 .booking__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   background-repeat: no-repeat;
   position: relative;
 
   &:after .div {
-    margin: 3em;
+    margin: 1em;
   }
 
-  .booking__map{
+  .booking__map {
     z-index: 11;
   }
-  .booking__inner-container{
+  .booking__inner-container {
     position: relative;
     margin-top: 0;
   }
@@ -32,5 +63,532 @@
 }
 
 .booking__specials {
+  height: 200px;
+  width: 200px;
+  //border: 2px solid gray;
+  padding: 1em;
+}
 
+//.booking__page {
+//  display: flex;
+//  flex-direction: column;
+//}
+
+.booking__iCard {
+  //width: 8rem;
+  height: 20%;
+  background-image: url("https://awardwallet.com/blog/wp-content/uploads/2016/10/restaurant-dining-spend-e1516884205531-1024x550.jpeg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+}
+
+// Burger
+
+
+.burger__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 100%;
+  margin: auto;
+  padding: 12px;
+}
+
+// Build a burger
+.burger__burger__figure {
+  width: 100%;
+  height: auto;
+  max-width: $burger__figure-w;
+  animation: burger__figure $animation-duration ease-in-out infinite;
+  transform: translateZ(0)
+}
+
+.bun {
+  position: relative;
+  width: 128px;
+  &__top {
+    width: 114px;
+    height: 70px;
+    margin-left: $outline-w;
+    border-top-width: 0;
+    animation: bun-top $animation-duration ease-in-out infinite;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: $bun;
+      box-shadow: inset rgba(black, 0.1) 21px 0 0;
+      z-index: -1;
+    }
+    &:before {
+      top: 0; left: -($outline-w);
+      height: 100%;
+      border: $outline-w solid $outline;
+      border-radius: 100% 100% 0 0;
+    }
+    &:after {
+      bottom: 0; left: -($outline-w);
+      height: 40%;
+      border-right: $outline-w solid $outline;
+      border-left: $outline-w solid $outline;
+    }
+  }
+  &__bottom {
+    height: 30px;
+    border-radius: 0 0 20px 20px;
+    background-color: $bun;
+    border: $outline-w solid $outline;
+    box-shadow: inset rgba(black, 0.1) 21px 0 0;
+    z-index: 2;
+    animation: bun-bottom $animation-duration ease-in-out infinite;
+  }
+}
+
+.seeds {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  z-index: 2;
+}
+.seed {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 2px 3px 2px;
+  border-color: transparent transparent $seed transparent;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    width: 4px;
+    height: 3px;
+    background-color: $seed;
+    border-radius: 100%;
+  }
+  &:nth-child(1) {
+    bottom: 26px;
+    left: 10px;
+  }
+  &:nth-child(2) {
+    bottom: 10px;
+    left: 16px;
+  }
+  &:nth-child(3) {
+    bottom: 39px;
+    left: 27px;
+  }
+  &:nth-child(4) {
+    bottom: 22px;
+    left: 32px;
+  }
+  &:nth-child(5) {
+    bottom: 48px;
+    left: 46px;
+  }
+  &:nth-child(6) {
+    bottom: 40px;
+    left: 62px;
+  }
+  &:nth-child(7) {
+    bottom: 45px;
+    left: 78px;
+  }
+  &:nth-child(8) {
+    bottom: 32px;
+    left: 96px;
+  }
+  &:nth-child(9) {
+    bottom: 9px;
+    left: 45px;
+  }
+  &:nth-child(10) {
+    bottom: 14px;
+    left: 84px;
+  }
+  &:nth-child(11) {
+    bottom: 10px;
+    left: 102px;
+  }
+}
+
+.tomato {
+  position: relative;
+  width: 144px;
+  height: 24px;
+  margin: -($outline-w) -8px;
+  background-color: $tomato;
+  border: $outline-w solid $outline;
+  border-radius: 100px;
+  z-index: 3;
+  animation: tomato $animation-duration ease-in-out infinite;
+  &:before {
+    @include pseudo-shadow;
+    width: 29px;
+  }
+}
+
+
+
+
+// error below
+
+
+.lettuce {
+  position: relative;
+  width: 140px;
+  height: 25px;
+  margin: -($outline-w) -6px;
+  border-radius: 16px 16px 0 0;
+  z-index: 2;
+  animation: lettuce $animation-duration ease-in-out infinite;
+}
+
+.leaf {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 30px;
+  background-color: $lettuce;
+  border: $outline-w solid $outline;
+  border-radius: 12px;
+  z-index: 1;
+  &:nth-child(1) {
+    left: 0;
+    background-color: $lettuce-shadow;
+  }
+  &:nth-child(2) {
+    left: 24px;
+    &:after {
+      @include pseudo-shadow;
+      width: 3px;
+      background-color: $lettuce-shadow;
+      border-radius: 0 0 0 100px;
+    }
+  }
+  &:nth-child(3) {
+    left: 48px;
+  }
+  &:nth-child(4) {
+    left: 72px;
+  }
+  &:nth-child(5) {
+    left: 96px;
+  }
+  &:nth-child(6) {
+    left: 120px;
+  }
+}
+
+.cover {
+  position: absolute;
+  top: -14px;
+  left: $outline-w;
+  width: 126px;
+  height: 32px;
+  background-color: $lettuce;
+  border-top: $outline-w solid $outline;
+  z-index: 2;
+  &:before {
+    @include pseudo-shadow;
+    background-color: $lettuce-shadow;
+    width: 27px;
+    border-radius: 12px 0 0 0;
+  }
+}
+
+.arch {
+  position: absolute;
+  bottom: -2px;
+  width: 18px;
+  height: 10px;
+  background-color: $cheese;
+  border: $outline-w solid $outline;
+  border-bottom-width: 0;
+  border-radius: 100px 100px 0 0;
+  &:nth-child(1) {
+    left: 6px;
+    &:before {
+      @include pseudo-shadow;
+      width: 100%;
+    }
+  }
+  &:nth-child(2) {
+    left: 30px;
+  }
+  &:nth-child(3) {
+    left: 54px;
+  }
+  &:nth-child(4) {
+    left: 78px;
+  }
+  &:nth-child(5) {
+    left: 102px;
+  }
+}
+
+.cheese {
+  position: relative;
+  width: 128px;
+  height: 32px;
+  margin-top: -18px;
+  background-color: $cheese;
+  border: $outline-w solid $outline;
+  border-top-width: 0;
+  &:before {
+    @include pseudo-shadow;
+    width: 21px;
+  }
+}
+
+.burger {
+  position: relative;
+  width: 144px;
+  height: 24px;
+  margin: -($outline-w) -8px;
+  background-color: $burger;
+  border: $outline-w solid $outline;
+  border-radius: 100px;
+  animation: burger $animation-duration ease-in-out infinite;
+  &:before {
+    @include pseudo-shadow;
+    width: 29px;
+  }
+}
+
+.spot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: $burger-spot;
+  &:nth-child(1) {
+    top: 3px;
+    left: 6px;
+  }
+  &:nth-child(2) {
+    top: 4px;
+    left: 20px;
+    width: 2px;
+    height: 2px;
+  }
+  &:nth-child(3) {
+    top: 3px;
+    left: 32px;
+    width: 3px;
+    height: 3px;
+  }
+  &:nth-child(4) {
+    top: 4px;
+    left: 46px;
+    width: 2px;
+    height: 2px;
+  }
+  &:nth-child(5) {
+    top: 5px;
+    left: 59px;
+    width: 3px;
+    height: 3px;
+  }
+  &:nth-child(6) {
+    top: 3px;
+    left: 70px;
+    width: 2px;
+    height: 2px;
+  }
+  &:nth-child(7) {
+    top: 3px;
+    left: 78px;
+    width: 5px;
+    height: 5px;
+  }
+  &:nth-child(8) {
+    top: 2px;
+    left: 88px;
+    width: 2px;
+    height: 2px;
+  }
+  &:nth-child(9) {
+    top: 4px;
+    left: 96px;
+    width: 3px;
+    height: 3px;
+  }
+  &:nth-child(10) {
+    top: 3px;
+    left: 106px;
+    width: 4px;
+    height: 4px;
+  }
+  &:nth-child(11) {
+    top: 3px;
+    left: 114px;
+    width: 2px;
+    height: 2px;
+  }
+  &:nth-child(12) {
+    top: 3px;
+    left: 120px;
+    width: 4px;
+    height: 4px;
+  }
+}
+//
+//// Burger Face
+//.face {
+//  height: 26px;
+//  animation: face $animation-duration ease-in-out infinite;
+//}
+//.eye {
+//  position: absolute;
+//  bottom: 20px;
+//  width: 20%;
+//  height: 30%;
+//  background-color: $eye;
+//  border: $outline-w solid $outline;
+//  border-radius: 100%;
+//  &:before {
+//    content: "";
+//    position: absolute;
+//    bottom: -($outline-w); left: -($outline-w);
+//    width: calc(100% + 15px);
+//    height: calc(50% + 7px);
+//    background-color: $bun;
+//  }
+//  &__left {
+//    left: 42px;
+//  }
+//  &__right {
+//    left: 72px;
+//  }
+//}
+//
+//.mouth {
+//  position: absolute;
+//  bottom: 14px;
+//  left: 57px;
+//  width: 20%;
+//  height: 30%;
+//  border-radius: 100%;
+//  overflow: hidden;
+//  &:before {
+//    content: "";
+//    position: absolute;
+//    bottom: 0; left: 0;
+//    width: 100%;
+//    height: 50%;
+//    background-color: $outline;
+//  }
+//  &:after {
+//    content: "";
+//    position: absolute;
+//    bottom: -5px;
+//    left: 6px;
+//    width: 11px;
+//    height: 11px;
+//    background-color: $tongue;
+//    border-radius: 100%;
+//  }
+//}
+//
+//.shadow {
+//  width: 126px;
+//  height: 14px;
+//  background-color: $shadow;
+//  border-radius: 100px;
+//  z-index: -1;
+//  margin-top: -6px;
+//  margin-left: -6px;
+//  animation: shadow $animation-duration ease-in-out infinite;
+//}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// Animation time!
+@keyframes burger__figure {
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+@keyframes bun-top {
+  10% {
+    height: 54px;
+  }
+  25% {
+    height: 70px;
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+}
+@keyframes tomato {
+  40% {
+    transform: rotate(2deg) translateY(-16px);
+  }
+  50% {
+    transform: rotate(-2deg) translateY(-8px);
+  }
+  70% {
+    transform: rotate(0) translateY(0);
+  }
+}
+@keyframes lettuce {
+  40% {
+    transform: rotate(-2deg) translateY(-14px);
+  }
+  50% {
+    transform: rotate(0) translateY(-7px);
+  }
+  70% {
+    transform: rotate(0) translateY(0);
+  }
+}
+@keyframes burger {
+  40% {
+    transform: rotate(-2deg) translateY(-8px);
+  }
+  50% {
+    transform: rotate(2deg) translateY(-4px);
+  }
+  70% {
+    transform: rotate(0) translateY(0);
+  }
+}
+@keyframes bun-bottom {
+  10% {
+    height: 20px;
+  }
+  25% {
+    height: 30px;
+  }
+}
+@keyframes face {
+  25% {
+    height: 20px;
+  }
+  50% {
+    height: 26px;
+  }
+}
+@keyframes shadow {
+  25% {
+    width: 80px;
+    transform: translate(28px,22px);
+  }
+  50% {
+    width: 126px;
+    transform: translate(0,0);
+  }
 }

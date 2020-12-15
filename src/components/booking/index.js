@@ -2,6 +2,7 @@ import React from 'react';
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Jumbotron, Container, Image } from 'react-bootstrap';
 import BookingMain from './booking-main';
+import Burger from './burger';
 import Title from '../globals/title';
 import SpecialsImg from '../../images/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
 import '../../../dist/bootstrap.min.css';
@@ -26,6 +27,9 @@ const Index = () => (
       <br />
     </p>
     <div className="row">
+      <div className="col-lg-7 d-flex justify-content-center ">
+        <Burger />
+      </div>
       <div className="col-lg-5 mb-4">
         <div className="card">
           <div className="card-body">
@@ -33,14 +37,8 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <div className="col-lg-7 ">
-        <div className="card card-cascade wider reverse">
-          <div className="view view-cascade overlay">
-          <Image src={SpecialsImg} alt="specials" fluid />
-          </div>
-        </div>
-        <div className="booking__specials">
-        </div>
+      <div className="booking__iCard col-lg-2 d-flex justify-content-center">
+        <Image src={SpecialsImg} alt="specials" fluid className="booking__specials" />
       </div>
     </div>
   </section>

@@ -11,6 +11,7 @@ const Booking = () => {
   const [modalShow, setModalShow] = useState(false);
   return (
     <div className="booking__container">
+      <h3>Make a Reservation</h3>
       <div className="booking__inner-container">
         <BookingForm />
         <DatePicker
