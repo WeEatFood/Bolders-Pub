@@ -7,10 +7,10 @@ import Layout from '../../components/layout'
 const Brewery = props => {
   return (
     <Layout>
-      <div className="brew__container">
+      <div>
         <h4 className="brew__header">Brewery</h4>
 
-        <div className="sub__container--col">
+        <div className="brew__container">
 
           <div className="sub__list">
             <h5 className="sub__header--brew">DRAUGHT BEER </h5>
