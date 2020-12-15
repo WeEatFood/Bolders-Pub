@@ -8,15 +8,15 @@
   }
 
   .brew__header{
-    // width: 100%;
-    // height: 5rem;
-    // font-size: 2em;
-    // font-family: $default-font-family;
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
-    // align-items: center;
-    // border-bottom: 1px solid $tan;
+    width: 100%;
+    height: 5rem;
+    font-size: 2em;
+    font-family: $default-font-family;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $tan;
   }
   
   .brew-item__header{
@@ -41,4 +41,13 @@
   .brew-item{
     display: flex;
     justify-content: space-between;
+  }
+
+  .sub__container--col{
+    width: 30%;
+    height: 100%;
+    border: 1px solid $tan;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
   }
