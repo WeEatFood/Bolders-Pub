@@ -87,7 +87,7 @@ export default class OnlineItems extends React.Component {
               </div>
             </div>
             <h4>Order something nice for yourself</h4>
-            <div className="row">
+            <div className="row justify-content-start card-deck">
               {this.state.menuItems.map(({ node }) => {
                 return (
                   <div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
