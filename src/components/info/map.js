@@ -3,15 +3,16 @@ import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Jumbotron, Container, Card } from 'react-bootstrap';
 import { Clock } from 'react-feather';
 import '../../scss/info.scss';
+import Title from '../globals/title';
 
 const Map = () => (
   <section className="section pb-5">
     <Jumbotron className="info__jumbo" fluid>
       <Container className="info__container">
-        <h1>Information</h1>
-        <p className="info__subtitle">
-          This is a modified jumbotron that occupies the entire horizontal space of its parent.
-        </p>
+        <Title title="information" />
+        <figure className="figure text-start ml-5 mt-2">
+          <p className="info__subtitle lead">Here is a little more info about us.</p>
+        </figure>
       </Container>
     </Jumbotron>
     <p className="section-description pb-4 text-center">
@@ -24,54 +25,7 @@ const Map = () => (
       <div className="col-lg-5 mb-4">
         <div className="card">
           <div className="card-body text-center">
-            <Card className="text-center">
-              <Card.Header>Hours of Operation</Card.Header>
-              <Card.Body>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Monday 2 - 12</span>
-                  </ul>
-                </div>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Tuesday 2 - 12</span>
-                  </ul>
-                </div>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Wednesday 2 - 12</span>
-                  </ul>
-                </div>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Thursday 2 - 12</span>
-                  </ul>
-                </div>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Friday 2 - 2</span>
-                  </ul>
-                </div>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Saturday 2 - 2</span>
-                  </ul>
-                </div>
-                <div className="hours-wrap">
-                  <Clock className="info__hours-clock" />
-                  <ul className="">
-                    <span>Sunday Closed</span>
-                  </ul>
-                </div>
-              </Card.Body>
-              <Card.Footer className="text-muted">2 days ago</Card.Footer>
-            </Card>
+         <Hours/>
           </div>
         </div>
       </div>
