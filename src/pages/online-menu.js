@@ -38,7 +38,7 @@ export const data = graphql`
           price
           category
           image {
-            fixed(width: 100, height: 50) {
+            fixed(width: 200, height: 200) {
               ...GatsbyContentfulFixed
             }
           }
