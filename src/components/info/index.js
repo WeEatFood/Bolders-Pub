@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { Jumbotron, Container, Card } from 'react-bootstrap';
+import { Jumbotron, Container } from 'react-bootstrap';
 import { Clock } from 'react-feather';
 import '../../scss/info.scss';
 import Title from '../globals/title';
+import Hours from './hours';
 
 const Map = () => (
   <section className="section pb-5">

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Jumbotron, Container } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { FaCartArrowDown } from 'react-icons/fa';
 import '../../scss/online.scss';
+import Title from '../globals/title';
 
 const getCategories = items => {
   let tempItems = items.map(items => {
@@ -41,9 +43,16 @@ export default class OnlineItems extends React.Component {
   render() {
     if (this.state.items.length > 0) {
       return (
-        <section className="online__menu py-5">
+        <section className="online__menu">
+          <Jumbotron className="info__jumbo" fluid>
+            <Container className="info__container">
+              <Title title="Order Online" />
+              <figure className="figure text-start ml-5 mt-2">
+                <p className="info__subtitle lead">Here is a little more info about us.</p>
+              </figure>
+            </Container>
+          </Jumbotron>
           <div className="online__menu__container">
-            <h1>Online-Menu</h1>
             <li
               className="nav-item ml-sm-5"
               style={{
@@ -52,7 +61,12 @@ export default class OnlineItems extends React.Component {
                 width: '5rem',
               }}
             >
-              <FaCartArrowDown className="cart-icon snipcart-checkout" />
+              <span style={{ fontSize: '34px', fontWeight: 'normal', letterSpacing: '0.25px' }}>
+                Cart
+              </span>
+              <span>
+                <FaCartArrowDown className="cart-icon snipcart-checkout" />
+              </span>
               {/*<span className="snipcart-items-count"></span>*/}
               {/*<span className="snipcart-total-price"></span>*/}
             </li>
