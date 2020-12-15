@@ -25,6 +25,13 @@
     font-size: 9px;
     color: $darker-gray;
   }
+
+  .brew-item__price{
+    text-align: left;
+    font-family: $menu-font-family;
+    color: $darker-blue;
+    font-size: 9px;
+  }
   
   .sub__header--brew{
     width: 100%;
