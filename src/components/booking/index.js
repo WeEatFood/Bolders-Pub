@@ -1,17 +1,19 @@
 import React from 'react';
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { Jumbotron, Container } from 'react-bootstrap';
-import Formik from './Formik';
-import '../../scss/contact.scss';
+import { Jumbotron, Container, Image } from 'react-bootstrap';
+import BookingMain from './booking-main';
 import Title from '../globals/title';
+import '../../scss/booking.scss';
 
-const Contact = () => (
+const Index = () => (
   <section className="section pb-5">
     <Jumbotron className="info__jumbo" fluid>
       <Container className="info__container">
-        <Title title="contact" />
+        <Title title="booking" />
         <figure className="figure text-start ml-5 mt-2">
-          <p className="info__subtitle lead">Need to contact us for some reason? No problem!</p>
+          <p className="info__subtitle lead">
+            Come make your reservation here with us! Can't wait to have you!
+          </p>
         </figure>
       </Container>
     </Jumbotron>
@@ -25,7 +27,7 @@ const Contact = () => (
       <div className="col-lg-5 mb-4">
         <div className="card">
           <div className="card-body">
-            <Formik />
+            <BookingMain />
           </div>
         </div>
       </div>
@@ -35,12 +37,7 @@ const Contact = () => (
           className="z-depth-1-half map-container-6 mx-2"
           style={{ height: '400px' }}
         >
-          <iframe
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=501%20pine%20street%20bolder%20co.+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            frameBorder={0}
-            style={{ border: 0 }}
-            allowFullScreen
-          />
+          <Image src="" />
         </div>
         <br />
         <div className="row text-center">
@@ -71,4 +68,4 @@ const Contact = () => (
   </section>
 );
 
-export default Contact;
+export default Index;

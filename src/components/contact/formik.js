@@ -1,13 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import {
-  FaPhoneAlt,
-  FaRegEnvelope,
-  FaMapMarkerAlt,
-  FaPencilAlt,
-  FaTag,
-  FaUserAlt,
-} from 'react-icons/fa';
+import { FaRegEnvelope, FaPencilAlt, FaUserAlt } from 'react-icons/fa';
 import '../../scss/contact.scss';
 
 const Formik = () => (
@@ -62,35 +55,6 @@ const Formik = () => (
       </form>
     </div>
   </section>
-  // <p>We'll write rarely, but with only the best content.</p>
-  // <br />
-  // <div className="md-form">
-  //   <FaUserAlt />
-  //   <input type="text" id="form-name" className="form-control" />
-  //   <label htmlFor="form-name">Your name</label>
-  // </div>
-  // <div className="md-form">
-  //   <FaRegEnvelope />
-  //   <input type="text" id="form-email" className="form-control" />
-  //   <label htmlFor="form-email">Your email</label>
-  // </div>
-  // <div className="md-form">
-  //   <FaTag />
-  //   <input type="text" id="form-Subject" className="form-control" />
-  //   <label htmlFor="form-Subject">Subject</label>
-  // </div>
-  // <div className="md-form">
-  //   <FaPencilAlt />
-  //   <textarea
-  //     id="form-text"
-  //     className="form-control md-textarea"
-  //     rows={3}
-  //     defaultValue={''}
-  //   />
-  //   <label htmlFor="form-text">Icon Prefix</label>
-  // </div>
-  // <div className="text-center mt-4">
-  //   <button className="btn btn-light-blue">Submit</button>
 );
 
 export default Formik;
