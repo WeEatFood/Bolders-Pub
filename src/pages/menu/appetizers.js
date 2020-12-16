@@ -2,10 +2,13 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import '../../scss/appetizer.scss';
 import PropTypes from 'prop-types';
+import MenuBar from '../../components/globals/MenuBar';
+import '../../scss/menu.scss'
 
 const Appetizers = props => {
   return (
     <Layout>
+      <MenuBar />
       <div className="sub__container">
         <h4 className="app__header">Appetizers</h4>
 
@@ -49,7 +52,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">SPICY ASIAN WINGS</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-            Chinese five spice hoisin glaze, gorgonzola dressing
+              Chinese five spice hoisin glaze, gorgonzola dressing
           </p>
             <p className="app-item__details--price">12</p>
           </div>
@@ -59,7 +62,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">HAZELNUT DUSTED CALAMARI</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-            Chipotle aioli, bloody mary cocktail sauce
+              Chipotle aioli, bloody mary cocktail sauce
           </p>
             <p className="app-item__details--price">12</p>
           </div>
@@ -69,7 +72,7 @@ const Appetizers = props => {
           <h4 className="app-item__header">PARMESAN TRUFFLE FRIES</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-            Shoestring potatoes, pecorino, white truffle oil and house smoked tomato ketchup
+              Shoestring potatoes, pecorino, white truffle oil and house smoked tomato ketchup
           </p>
             <p className="app-item__details--price">12</p>
           </div>
@@ -79,13 +82,13 @@ const Appetizers = props => {
           <h4 className="app-item__header">PORK BELLY LETTUCE WRAPS</h4>
           <div className="app-item__details">
             <p className="app-item__details--description">
-            Braised pork belly, bourbon-soy glaze, peanuts kimchi
+              Braised pork belly, bourbon-soy glaze, peanuts kimchi
           </p>
             <p className="app-item__details--price">14</p>
           </div>
         </div>
 
-        
+
 
 
       </div>
