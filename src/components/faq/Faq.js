@@ -4,9 +4,8 @@ import { Jumbotron, Container } from 'react-bootstrap';
 import { Clock } from 'react-feather';
 import '../../scss/info.scss';
 import Title from '../globals/Title';
-import Hours from './hours';
 
-const Map = () => (
+const Faq = () => (
   <section className="section pb-5">
     <Jumbotron className="info__jumbo" fluid>
       <Container className="info__container">
@@ -72,4 +71,4 @@ const Map = () => (
   </section>
 );
 
-export default Map;
+export default Faq;

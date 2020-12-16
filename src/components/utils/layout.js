@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './globals/navbar';
+import Header from '../globals/Navbar';
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaYelp } from 'react-icons/fa';
-import 'normalize.css';
-import '../../dist/bootstrap.min.css';
-import '../scss/_config.scss';
-import '../scss/layout.scss';
+import '../../../node_modules/normalize.css/normalize.css';
+import '../../../dist/bootstrap.min.css';
+import '../../scss/_config.scss';
+import './styles.scss';
 
 const Layout = ({ children }) => (
   <>

@@ -2,7 +2,7 @@ import React from 'react';
 // import '../../scss/sub-menu.scss'
 import '../../scss/brewery.scss'
 import PropTypes from 'prop-types';
-import Layout from '../../components/layout'
+import Layout from '../../components/utils/layout'
 
 const Brewery = props => {
   return (

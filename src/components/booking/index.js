@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Jumbotron, Container, Image } from 'react-bootstrap';
 import BookingMain from './booking-main';
 import Burger from './burger';
-import Title from '../globals/title';
+import Title from '../globals/Title';
 import SpecialsImg from '../../images/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
 import '../../../dist/bootstrap.min.css';
 import '../../scss/booking.scss';

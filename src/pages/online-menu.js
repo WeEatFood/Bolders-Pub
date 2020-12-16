@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/utils/layout';
+import SEO from '../components/utils/seo';
 import OnlineItems from '../components/online-menu/online';
 import Disqus from 'disqus-react';
 

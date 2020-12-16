@@ -2,9 +2,9 @@ import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import Logo from '../../images/bolderlogo.png';
-import '../../scss/navbar.scss';
+import './styles.scss';
 
-const NavBar = () => (
+const Navbar = () => (
   <header className="container__navbar">
     <Link to="/">
       <img src={ Logo } alt="logo" className="logo"/>
@@ -57,4 +57,4 @@ const NavBar = () => (
   </header>
 );
 
-export default NavBar;
+export default Navbar;

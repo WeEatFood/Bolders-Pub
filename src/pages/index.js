@@ -2,13 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Carousel, Button } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-image';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/utils/layout';
+import SEO from '../components/utils/seo';
 import Info from '../components/home/info';
 import HomeImg1 from '../images/Food/burgerhome.jpg';
 import HomeImg2 from '../images/Food/wine2.jpg';
 import HomeImg3 from '../images/Food/open.jpg';
-import '.././scss/home.scss';
+import '../scss/home.scss';
 
 const IndexPage = props => (
   <Layout>

@@ -3,7 +3,7 @@ import { Button, Container, Jumbotron } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { FaCartArrowDown, FaStar } from 'react-icons/fa';
 import '../../scss/online.scss';
-import Title from '../globals/title';
+import Title from '../globals/Title';
 
 const getCategories = items => {
   let tempItems = items.map(items => {

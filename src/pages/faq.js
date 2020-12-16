@@ -1,7 +1,7 @@
 import React from 'react';
 import Index from '../components/faq/index';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/utils/layout';
+import SEO from '../components/utils/seo';
 
 const Faq = () => {
   return (

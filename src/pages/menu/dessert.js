@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../scss/dessert.scss';
 import PropTypes from 'prop-types';
-import Layout from '../../components/layout';
+import Layout from '../../components/utils/layout';
 
 const Dessert = props => {
   return (

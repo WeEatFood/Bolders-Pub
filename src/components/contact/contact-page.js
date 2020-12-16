@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Jumbotron, Container } from 'react-bootstrap';
 import Formik from './Formik';
 import '../../scss/contact.scss';
-import Title from '../globals/title';
+import Title from '../globals/Title';
 
 const Contact = () => (
   <section className="section pb-5">
