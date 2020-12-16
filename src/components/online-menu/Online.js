@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button, Container, Jumbotron } from 'react-bootstrap';
 import Img from 'gatsby-image';
+import { Title }from '../globals';
+import { Container, Jumbotron } from 'react-bootstrap';
 import { FaCartArrowDown, FaStar } from 'react-icons/fa';
-import '../../scss/online.scss';
-import Title from '../globals/Title';
+import './styles.scss';
 
 const getCategories = items => {
   let tempItems = items.map(items => {

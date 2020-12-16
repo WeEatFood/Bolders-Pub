@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import '../../scss/booking.scss';
+import './styles.scss';
 
 const BookingForm = () => (
   <Form>

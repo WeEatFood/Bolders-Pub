@@ -5,7 +5,7 @@ import ReactDisqusComments from 'react-disqus-comments';
  TODO  get rid/ use only for toast reference 
 */
 
-export default class Comments extends React.Component {
+export default class OnlineComments extends React.Component {
   constructor(props) {
     super(props);
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { FaRegEnvelope, FaPencilAlt, FaUserAlt } from 'react-icons/fa';
-import '../../scss/contact.scss';
+import './styles.scss';
 
-const Formik = () => (
+const ContactForm = () => (
   <section className="contact py-5">
     <h3 className="text-center">
       <FaRegEnvelope /> Write to us:
@@ -57,4 +57,4 @@ const Formik = () => (
   </section>
 );
 
-export default Formik;
+export default ContactForm;

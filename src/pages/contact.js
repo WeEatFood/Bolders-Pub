@@ -1,9 +1,9 @@
 import React from 'react';
 import Layout from '../components/utils/layout';
 import SEO from '../components/utils/seo';
-// import Formik from '../components/contact/formik';
-import ContactPage from '../components/contact/contact-page';
-import '../scss/contact.scss';
+// import ContactForm from '../components/contact/formik';
+import ContactPage from '../components/contact/Contact';
+import '../components/contact/styles.scss';
 
 const Contact = () => (
   <Layout>

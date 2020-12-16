@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../globals/Navbar';
+import  { NavBar  }from '../globals';
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaYelp } from 'react-icons/fa';
 import '../../../node_modules/normalize.css/normalize.css';
 import '../../../dist/bootstrap.min.css';
@@ -9,7 +9,7 @@ import './styles.scss';
 
 const Layout = ({ children }) => (
   <>
-    <Header />
+     <NavBar/>
     <main>{children}</main>
     <footer
       style={{

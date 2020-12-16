@@ -1,10 +1,12 @@
 import React from 'react';
+import { InfoHours } from './';
 import { Title }from '../globals';
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Jumbotron, Container } from 'react-bootstrap';
+import { Clock } from 'react-feather';
 import './styles.scss';
 
-const Faq = () => (
+const Info = () => (
   <section className="section pb-5">
     <Jumbotron className="info__jumbo" fluid>
       <Container className="info__container">
@@ -24,7 +26,7 @@ const Faq = () => (
       <div className="col-lg-5 mb-4">
         <div className="card">
           <div className="card-body text-center">
-            {/* TODO Put the Faq Component Here */}
+            <InfoHours />
           </div>
         </div>
       </div>
@@ -70,4 +72,4 @@ const Faq = () => (
   </section>
 );
 
-export default Faq;
+export default Info;

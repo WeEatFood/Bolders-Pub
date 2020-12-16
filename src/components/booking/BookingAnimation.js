@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../scss/booking.scss';
+import './styles.scss';
 
-function Burger() {
+function BookingAnimation() {
   return (
     <main className="burger__main">
       <figure className="burger__figure">
@@ -63,4 +63,4 @@ function Burger() {
   );
 }
 
-export default Burger;
+export default BookingAnimation;

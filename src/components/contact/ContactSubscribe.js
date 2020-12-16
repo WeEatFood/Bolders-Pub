@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { addToMailchimp } from 'gatsby-plugin-mailchimp';
-import styles from '../../scss/emailListForm.module.scss';
+import styles from './emailListForm.module.scss';
 
-class Subscribe extends Component {
+class ContactSubscribe extends Component {
   constructor() {
     super();
 
@@ -53,4 +53,4 @@ class Subscribe extends Component {
   }
 }
 
-export default Subscribe;
+export default ContactSubscribe;

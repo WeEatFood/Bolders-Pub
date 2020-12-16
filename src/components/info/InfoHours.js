@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Clock } from 'react-feather';
-import '../../scss/info.scss';
+import './styles.scss';
 
-const Hours = () => (
+const InfoHours = () => (
   <Card className="text-center">
     <Card.Header>Hours of Operation</Card.Header>
     <Card.Body>
@@ -54,4 +54,4 @@ const Hours = () => (
   </Card>
 );
 
-export default Hours;
+export default InfoHours;

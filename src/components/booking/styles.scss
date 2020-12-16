@@ -1,4 +1,4 @@
-@import 'config';
+@import "../../scss/config";
 
 // Colors
 $bg: #ffcb06;
@@ -85,7 +85,7 @@ $animation-duration: 1s;
   padding-left: 1em;
 }
 
-// Burger
+// BookingAnimation
 
 
 .burger__main {
@@ -440,7 +440,7 @@ $animation-duration: 1s;
   }
 }
 //
-//// Burger Face
+//// BookingAnimation Face
 //.face {
 //  height: 26px;
 //  animation: face $animation-duration ease-in-out infinite;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
-import BookingForm from './booking-form';
-import MyVerticallyCenteredModal from './modal';
+import { BookingForm }from './index';
+import MyVerticallyCenteredModal from './BookingModal';
 import 'react-datepicker/dist/react-datepicker.css';
-import '../../scss/booking.scss';
+import './styles.scss';
 
 const Booking = () => {
   const [startDate, setStartDate] = useState(new Date());

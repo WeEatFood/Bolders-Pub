@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Logo from '../../images/bolderlogo.png';
 import './styles.scss';
 
-const Navbar = () => (
+const NavBar = () => (
   <header className="container__navbar">
     <Link to="/">
       <img src={ Logo } alt="logo" className="logo"/>
@@ -57,4 +57,4 @@ const Navbar = () => (
   </header>
 );
 
-export default Navbar;
+export default NavBar;

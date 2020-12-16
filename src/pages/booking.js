@@ -2,15 +2,14 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import Layout from '../components/utils/layout';
 import SEO from '../components/utils/seo';
-import Index from '../components/booking/index';
-import '../scss/booking.scss';
+import { Booking } from '../components/booking';
+import '../components/booking/styles.scss';
 import SpecialsImg from '../images/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
 
-const Contact = () => (
+export default () => (
   <Layout>
     <SEO title="Booking Page" />
-    <Index />
+    <Booking/>
   </Layout>
 );
 
-export default Contact;

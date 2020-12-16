@@ -7,7 +7,7 @@
 //   const { createPage } = boundActionCreators;
 //
 //   return new Promise((resolve, reject) => {
-//     const postTemplate = path.resolve('./src/components/online-menu/postTemplate.js');
+//     const postTemplate = path.resolve('./src/components/online-menu/OnlinePost.js');
 //     resolve(
 //       graphql(
 //         `

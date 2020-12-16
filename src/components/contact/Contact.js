@@ -1,9 +1,9 @@
 import React from 'react';
+import { Title }from '../globals';
+import { ContactForm }from './';
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Jumbotron, Container } from 'react-bootstrap';
-import Formik from './Formik';
-import '../../scss/contact.scss';
-import Title from '../globals/Title';
+import './styles.scss';
 
 const Contact = () => (
   <section className="section pb-5">
@@ -25,7 +25,7 @@ const Contact = () => (
       <div className="col-lg-5 mb-4">
         <div className="card">
           <div className="card-body">
-            <Formik />
+            <ContactForm />
           </div>
         </div>
       </div>

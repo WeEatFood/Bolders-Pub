@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'gatsby';
-import '../../scss/home.scss';
+import './styles.scss';
 
-const Info = () => (
+const HomeInfo = () => (
   <section className="py-5">
     <div className="container">
       <div className="row">
@@ -28,4 +28,4 @@ const Info = () => (
   </section>
 );
 
-export default Info;
+export default HomeInfo;

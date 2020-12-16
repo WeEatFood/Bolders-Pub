@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/utils/layout';
 import SEO from '../components/utils/seo';
-import OnlineItems from '../components/online-menu/online';
+import OnlineItems from '../components/online-menu/Online';
 import Disqus from 'disqus-react';
 
 const OnlineMenu = ({ data }) => {
