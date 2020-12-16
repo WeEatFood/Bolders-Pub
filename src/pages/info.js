@@ -1,15 +1,8 @@
 import React from 'react';
-import { Info } from '../components/info/';
-import { Layout } from '../components/utils';
-import '../components/info/styles.scss';
+import { Layout, Info } from '../components';
 
-export default () => {
-  return (
-    <Layout>
-      <div className="info__container">
-        <Info />
-      </div>
-    </Layout>
-  );
-};
-
+export default () => (
+  <Layout>
+    <Info />
+  </Layout>
+);

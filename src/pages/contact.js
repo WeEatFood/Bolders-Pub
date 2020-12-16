@@ -1,15 +1,10 @@
 import React from 'react';
-import Layout from '../components/utils/layout';
-import SEO from '../components/utils/seo';
-// import ContactForm from '../components/contact/formik';
-import ContactPage from '../components/contact/Contact';
+import { Layout, SEO, Contact } from '../components';
 import '../components/contact/styles.scss';
 
-const Contact = () => (
+export default () => (
   <Layout>
     <SEO title="contact-page" />
-    <ContactPage />
+    <Contact />
   </Layout>
 );
-
-export default Contact;

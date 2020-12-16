@@ -7,21 +7,21 @@
 // const MenuPreview = () => {
 //   const data = useStaticQuery(graphql`
 // 		query Images {
-// 			homeImg1: file(relativePath: { eq: "Food/burgerhome.jpg" }) {
+// 			homeImg1: file(relativePath: { eq: "food/burgerhome.jpg" }) {
 // 				childImageSharp {
 // 					fluid {
 // 						...GatsbyImageSharpFluid_tracedSVG
 // 					}
 // 				}
 // 			}
-// 			homeImg2: file(relativePath: { eq: "Food/wine2.jpg" }) {
+// 			homeImg2: file(relativePath: { eq: "food/wine2.jpg" }) {
 // 				childImageSharp {
 // 					fluid {
 // 						...GatsbyImageSharpFluid_tracedSVG
 // 					}
 // 				}
 // 			}
-// 			homeImg3: file(relativePath: { eq: "Food/open.jpg" }) {
+// 			homeImg3: file(relativePath: { eq: "food/open.jpg" }) {
 // 				childImageSharp {
 // 					fluid {
 // 						...GatsbyImageSharpFluid_tracedSVG

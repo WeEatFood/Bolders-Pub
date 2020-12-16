@@ -8,7 +8,7 @@ import Cocktails from './menu/cocktails';
 import Dessert from './menu/dessert';
 import Kitchen from './menu/kitchen';
 import Wine from './menu/wine';
-import Layout from '../components/layout';
+import { Layout } from '../components/utils';
 import '../scss/menu.scss';
 
 const Menu = () => (
@@ -20,32 +20,32 @@ const Menu = () => (
         <Link to="/menu/appetizers">
           <Button className="menu__btn" variant="" size="sm">
             Appetizers
-      </Button>
+          </Button>
         </Link>
         <Link to="/menu/kitchen">
           <Button className="menu__btn" variant="" size="sm">
             Kitchen
-      </Button>
+          </Button>
         </Link>
         <Link to="/menu/dessert">
           <Button className="menu__btn" variant="" size="sm">
             Dessert
-      </Button>
+          </Button>
         </Link>
         <Link to="/menu/cocktails">
           <Button className="menu__btn" variant="" size="sm">
             Cocktails
-      </Button>
+          </Button>
         </Link>
         <Link to="/menu/brewery">
           <Button className="menu__btn" variant="" size="sm">
             Brewery
-      </Button>
+          </Button>
         </Link>
         <Link to="/menu/wine">
           <Button className="menu__btn" variant="" size="sm">
             Wine
-      </Button>
+          </Button>
         </Link>
       </nav>
       <MyRouter>

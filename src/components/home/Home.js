@@ -1,12 +1,9 @@
 import React from 'react';
-import { HomeInfo }from './';
+import { HomeInfo } from './';
 import { Carousel, Button } from 'react-bootstrap';
 import { graphql } from 'gatsby';
 import BackgroundImage from 'gatsby-image';
-
-import HomeImg1 from '../../images/Food/burgerhome.jpg';
-import HomeImg2 from '../../images/Food/wine2.jpg';
-import HomeImg3 from '../../images/Food/open.jpg';
+import { BurgerHome as HomeImg1, Wine2 as HomeImg2, Open as HomeImg3 } from '../../images';
 import './styles.scss';
 
 const Home = props => (
@@ -64,21 +61,15 @@ const Home = props => (
       <div className="row justify-content-center">
         <div className="col-3 carousel__img-container">
           <img src={HomeImg3} alt="food" className="sliderz" />
-          <Button className="carousel__img-btn" >
-            Info
-          </Button>
+          <Button className="carousel__img-btn">Info</Button>
         </div>
         <div className="col-3 carousel__img-container">
           <img src={HomeImg1} alt="food" className="sliderz" />
-          <Button className="carousel__img-btn">
-            Menu
-          </Button>
+          <Button className="carousel__img-btn">Menu</Button>
         </div>
         <div className="col-3 carousel__img-container">
           <img src={HomeImg2} alt="food" className="sliderz" />
-          <Button className="carousel__img-btn">
-            Drinks
-          </Button>
+          <Button className="carousel__img-btn">Drinks</Button>
         </div>
       </div>
     </div>
@@ -88,34 +79,34 @@ const Home = props => (
 export default Home;
 
 export const data = graphql`
-	query {
-		slide1: file(relativePath: { eq: "../../Restaurant/pubhub2.jpg" }) {
-			childImageSharp {
-				fluid {
-					...GatsbyImageSharpFluid_tracedSVG
-				}
-			}
-		}
-		slide2: file(relativePath: { eq: "../../Restaurant/beer.jpg" }) {
-			childImageSharp {
-				fluid {
-					...GatsbyImageSharpFluid_tracedSVG
-				}
-			}
-		}
-		slide3: file(relativePath: { eq: "../../Restaurant/rest.jpg" }) {
-			childImageSharp {
-				fluid {
-					...GatsbyImageSharpFluid_tracedSVG
-				}
-			}
-		}
-		slide4: file(relativePath: { eq: "../../Restaurant/burger.jpg" }) {
-			childImageSharp {
-				fluid {
-					...GatsbyImageSharpFluid_tracedSVG
-				}
-			}
-		}
-	}
+  query {
+    slide1: file(relativePath: { eq: "../restaurant/pubhub2.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    slide2: file(relativePath: { eq: "../../restaurant/beer.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    slide3: file(relativePath: { eq: "../../restaurant/rest.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    slide4: file(relativePath: { eq: "../../restaurant/burger.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
 `;

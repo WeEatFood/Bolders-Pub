@@ -2,8 +2,8 @@ import React from 'react';
 import { Jumbotron, Container, Image } from 'react-bootstrap';
 import BookingMain from './Booking';
 import BookingAnimation from './BookingAnimation';
-import { Title }from '../globals';
-import SpecialsImg from '../../images/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
+import { Title } from '../globals';
+import SpecialsImg from '../../images/globals/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
 import '../../../dist/bootstrap.min.css';
 import './styles.scss';
 

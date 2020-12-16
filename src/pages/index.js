@@ -1,8 +1,5 @@
 import React from 'react';
-import Layout from '../components/utils/layout';
-import SEO from '../components/utils/seo';
-import {Home} from '../components/home'
-import '../components/booking/styles.scss';
+import { Layout, SEO, Home } from '../components';
 
 export default () => (
   <Layout>
@@ -10,4 +7,3 @@ export default () => (
     <Home />
   </Layout>
 );
-

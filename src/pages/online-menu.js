@@ -1,12 +1,9 @@
 import React from 'react';
+import { Layout, SEO, Online } from '../components';
 import { graphql } from 'gatsby';
-
-import Layout from '../components/utils/layout';
-import SEO from '../components/utils/seo';
-import OnlineItems from '../components/online-menu/Online';
 import Disqus from 'disqus-react';
 
-const OnlineMenu = ({ data }) => {
+export default ({ data }) => {
   const disqusShortName = 'bolderspub';
   const disqusConfig = {
     url: `http://localhost:8000`,
@@ -17,13 +14,11 @@ const OnlineMenu = ({ data }) => {
   return (
     <Layout>
       <SEO title="Online Menu" keywords={[`gatsby`, `food`, `react`, `order`]} />
-      <OnlineItems items={data.menu} />
+      <Online items={data.menu} />
       <Disqus.DiscussionEmbed config={disqusConfig} shortname={disqusShortName} />
     </Layout>
   );
 };
-
-export default OnlineMenu;
 
 export const data = graphql`
   query {
