@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../scss/sub-menu.scss';
 import '../../scss/wine.scss';
 import PropTypes from 'prop-types';
 import Layout from '../../components/utils/layout';
@@ -107,7 +106,7 @@ const Wine = props => {
             <p className="wine-item__details--price">14 PER GLASS</p>
             <p className="wine-item__details--price">56 PER BOTTLE</p>
 
-            <h5 className="wine-item__header">CH�TEAU DE BEAUCASTEL</h5>
+            <h5 className="wine-item__header">CHATEAU DE BEAUCASTEL</h5>
             <p className="wine-item__details--description">FRANCE</p>
             <p className="wine-item__details--price">160 PER BOTTLE</p>
 
@@ -117,12 +116,12 @@ const Wine = props => {
             <p className="wine-item__details--price">52 PER BOTTLE</p>
 
             <h4 className="sub__list--header">ROSE</h4>
-            <h5 className="wine-item__header">BIELER P�RE ET FILS</h5>
+            <h5 className="wine-item__header">BIELER PERE ET FILS</h5>
             <p className="wine-item__details--description">FRANCE</p>
             <p className="wine-item__details--price">7 PER GLASS</p>
             <p className="wine-item__details--price">24 PER BOTTLE</p>
 
-            <h5 className="wine-item__header">VENTURINI LAMBRUSCO ROS�</h5>
+            <h5 className="wine-item__header">VENTURINI LAMBRUSCO ROSE</h5>
             <p className="wine-item__details--description">SPARKLING ROSE</p>
             <p className="wine-item__details--price">8 PER GLASS</p>
             <p className="wine-item__details--price">28 PER BOTTLE</p>
