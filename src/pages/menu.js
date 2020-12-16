@@ -1,7 +1,7 @@
 import React from 'react';
-import { Router} from '@reach/router';
+import { Router as MyRouter, Switch } from '@reach/router';
 import { Link } from 'gatsby';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Appetizers from './menu/appetizers';
 import Brewery from './menu/brewery';
 import Cocktails from './menu/cocktails';
@@ -20,42 +20,42 @@ const Menu = () => (
         <Link to="/menu/appetizers">
           <Button className="menu__btn" variant="" size="sm">
             Appetizers
-          </Button>
+      </Button>
         </Link>
         <Link to="/menu/kitchen">
           <Button className="menu__btn" variant="" size="sm">
             Kitchen
-          </Button>
+      </Button>
         </Link>
         <Link to="/menu/dessert">
           <Button className="menu__btn" variant="" size="sm">
             Dessert
-          </Button>
+      </Button>
         </Link>
         <Link to="/menu/cocktails">
           <Button className="menu__btn" variant="" size="sm">
             Cocktails
-          </Button>
+      </Button>
         </Link>
         <Link to="/menu/brewery">
           <Button className="menu__btn" variant="" size="sm">
             Brewery
-          </Button>
+      </Button>
         </Link>
         <Link to="/menu/wine">
           <Button className="menu__btn" variant="" size="sm">
             Wine
-          </Button>
+      </Button>
         </Link>
       </nav>
-      <Router>
-        <Appetizers path="/menu/appetizers" component={Appetizers} />
-        <Brewery path="/menu/brewery" component={Brewery} />
-        <Cocktails path="/menu/cocktails" component={Cocktails} />
-        <Dessert path="/menu/dessert" component={Dessert} />
-        <Kitchen path="/menu/kitchen" component={Kitchen} />
-        <Wine path="/menu/wine" component={Wine} />
-      </Router>
+      <MyRouter>
+        <Appetizers path="/menu/appetizers" />
+        <Brewery path="/menu/brewery" />
+        <Cocktails path="/menu/cocktails" />
+        <Dessert path="/menu/dessert" />
+        <Kitchen path="/menu/kitchen" />
+        <Wine path="/menu/wine" />
+      </MyRouter>
     </div>
   </Layout>
 );

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'gatsby';
+// import Appetizers from '../../pages/menu/appetizers';
+// import Dessert from '../../pages/menu/dessert';
 import Logo from '../../images/bolderlogo.png';
 import '../../scss/navbar.scss';
 
 const NavBar = () => (
   <header className="container__navbar">
     <Link to="/">
-      <img src={ Logo } alt="logo" className="logo"/>
+      <img src={Logo} alt="logo" className="logo" />
     </Link>
     <Navbar className="navbar" collapseOnSelect expand="md" variant="light">
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -20,23 +22,35 @@ const NavBar = () => (
           </Link>
           <NavDropdown title="menu" id="dropdown" className="navbar__link">
             <NavDropdown.Item className="nav-drop__link" href="#menu/3.1">
-              Appetizers
+              <Link to="/menu/appetizers">
+                Appetizers
+              </Link>
             </NavDropdown.Item>
             <NavDropdown.Item className="nav-drop__link" href="#menu/3.4">
-              Dessert
+              <Link to="/menu/dessert">
+                Dessert
+              </Link>
             </NavDropdown.Item>
             <NavDropdown.Item className="nav-drop__link" href="#menu/3.4">
-              Kitchen
+              <Link to="/menu/kitchen">
+                Kitchen
+              </Link>
             </NavDropdown.Item>
-            <NavDropdown.Divider/>
+            <NavDropdown.Divider />
             <NavDropdown.Item className="nav-drop__link" href="#menu/3.3">
-              Cocktails
+              <Link to="/menu/cocktails">
+                Cocktails
+              </Link>
             </NavDropdown.Item>
             <NavDropdown.Item className="nav-drop__link" href="#menu/3.2">
-              Brewery
+              <Link to="/menu/brewery">
+                Brewery
+              </Link>
             </NavDropdown.Item>
             <NavDropdown.Item className="nav-drop__link" href="#menu/3.4">
-              Wine
+              <Link to="/menu/wine">
+                Wine
+              </Link>
             </NavDropdown.Item>
           </NavDropdown>
           <Link to="/info">
@@ -52,7 +66,7 @@ const NavBar = () => (
           </Link>
         </Nav>
       </Navbar.Collapse>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle" style={ { zIndex: '10' } }/>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle" style={{ zIndex: '10' }} />
     </Navbar>
   </header>
 );
