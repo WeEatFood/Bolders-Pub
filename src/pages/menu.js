@@ -9,7 +9,7 @@ import Dessert from './menu/dessert';
 import Kitchen from './menu/kitchen';
 import Wine from './menu/wine';
 import { Layout } from '../components/utils';
-import Layout from '../components/layout';
+
 import MenuBar from '../components/globals/MenuBar';
 import '../scss/menu.scss';
 
