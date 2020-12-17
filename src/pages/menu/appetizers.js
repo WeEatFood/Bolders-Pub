@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 import '../../scss/appetizer.scss';
 import PropTypes from 'prop-types';
 import MenuBar from '../../components/globals/MenuBar';
-import '../../scss/menu.scss'
+
 
 const Appetizers = props => {
   return (

@@ -2,10 +2,12 @@ import React from 'react';
 import '../../scss/wine.scss';
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout';
+import MenuBar from '../../components/globals/MenuBar';
 
 const Wine = props => {
   return (
     <Layout>
+      <MenuBar />
       <div className="sub__container">
         <h4 className="wine__header">Wine</h4>
         <div className="mainColumn">

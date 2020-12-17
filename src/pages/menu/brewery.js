@@ -1,12 +1,13 @@
 import React from 'react';
-// import '../../scss/sub-menu.scss'
 import '../../scss/brewery.scss'
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout'
+import MenuBar from '../../components/globals/MenuBar';
 
 const Brewery = props => {
   return (
     <Layout>
+      <MenuBar/>
       <div>
         <h4 className="brew__header">Brewery</h4>
 

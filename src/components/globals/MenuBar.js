@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Button } from 'react-bootstrap'
+// import '../../scss/menu.scss';
+import './MenuBar.scss'
 
 export default function MenuBar() {
     return (
         <>
+            <p className="menu__header--view">Select a menu to view</p>
             <nav className="menu">
                 <Link to="/menu/appetizers">
                     <Button className="menu__btn" variant="" size="sm">

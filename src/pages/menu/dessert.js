@@ -2,10 +2,12 @@ import React from 'react';
 import '../../scss/dessert.scss';
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout';
+import MenuBar from '../../components/globals/MenuBar';
 
 const Dessert = props => {
   return (
     <Layout>
+      <MenuBar/>
       <h4 className="dessert__header">Dessert</h4>
 
       <div className="dessert-item">

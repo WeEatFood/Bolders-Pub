@@ -2,11 +2,13 @@ import React from 'react';
 import '../../scss/kitchen.scss'
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout';
+import MenuBar from '../../components/globals/MenuBar';
 
 const Kitchen = props => {
   return (
     <Layout>
-      <h4 className="kitchen__header">KITCHEN</h4>
+      <MenuBar/>
+      <h4 className="kitchen__header">Kitchen</h4>
       <div className="mainColumn">
 
         <div className="columnOne">

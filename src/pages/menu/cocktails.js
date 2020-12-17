@@ -2,10 +2,12 @@ import React from 'react';
 import '../../scss/cocktails.scss'
 import PropTypes from 'prop-types';
 import Layout from '../../components/layout';
+import MenuBar from '../../components/globals/MenuBar';
 
 const Cocktails = props => {
   return (
     <Layout>
+      <MenuBar/>
       <div className="sub__container">
         <h4 className="cocktail__header">Cocktails</h4>
         <div className="cocktail__container">
