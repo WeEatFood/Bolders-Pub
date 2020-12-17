@@ -13,7 +13,7 @@ const Index = () => (
   //           </summary>
   //           <p className="faq__text">
   //             We offer touchless payments via our online menu. You can leave instructions for
-  //             contactless delivery if that’s what you prefer.
+  //             contactless delivery if thatï¿½s what you prefer.
   //           </p>
   //         </details>
   //         <details className="faq__detail">
