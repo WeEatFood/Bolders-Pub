@@ -1,10 +1,9 @@
-import React from 'react';
-import { HomeInfo } from './';
-import { Carousel, Button } from 'react-bootstrap';
-import { graphql } from 'gatsby';
-import BackgroundImage from 'gatsby-image';
-import { BurgerHome as HomeImg1, Wine2 as HomeImg2, Open as HomeImg3 } from '../../images';
-import './styles.scss';
+import React from "react";
+import { HomeInfo } from "./";
+import { Carousel, Button } from "react-bootstrap";
+import BackgroundImage from "gatsby-image";
+import { BurgerHome as HomeImg1, Wine2 as HomeImg2, Open as HomeImg3 } from "../../images";
+import "./styles.scss";
 
 const Home = props => (
   <React.Fragment>
@@ -77,36 +76,3 @@ const Home = props => (
 );
 
 export default Home;
-
-export const data = graphql`
-  query {
-    slide1: file(relativePath: { eq: "../restaurant/pubhub2.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-    slide2: file(relativePath: { eq: "../../restaurant/beer.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-    slide3: file(relativePath: { eq: "../../restaurant/rest.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-    slide4: file(relativePath: { eq: "../../restaurant/burger.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-  }
-`;
