@@ -22,7 +22,7 @@ const Faq = () => (
       veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
       <br />
     </p>
-    <div className="">
+    <div className="nothing">
       <FaqAccordion />
     </div>
   </section>
