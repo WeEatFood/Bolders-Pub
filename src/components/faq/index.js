@@ -1,7 +1,6 @@
-import Faq from './Faq'
-import FaqAccordion from './FaqAccordion'
+import Faq from "./Faq";
+import FaqAccordion from "./FaqAccordion";
 
-export {
-  Faq,
-  FaqAccordion
-}
+export { Faq, FaqAccordion };
+
+// New index
