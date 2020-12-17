@@ -1,11 +1,10 @@
-import React from 'react';
-import { Jumbotron, Container, Image } from 'react-bootstrap';
-import BookingMain from './Booking';
-import BookingAnimation from './BookingAnimation';
-import { Title } from '../globals';
-import SpecialsImg from '../../images/globals/Nia-Sign-With-Weekly-Specials-1024x524.jpg';
-import '../../../dist/bootstrap.min.css';
-import './styles.scss';
+import React from "react";
+import { Jumbotron, Container, Image } from "react-bootstrap";
+import { BookingAnimation, BookingDatePicker } from "./";
+import { Title } from "../globals";
+import { Specials } from "../../images";
+import "../../../dist/bootstrap.min.css";
+import "./styles.scss";
 
 const Booking = () => (
   <section className="section pb-5">
@@ -26,18 +25,15 @@ const Booking = () => (
       <br />
     </p>
     <div className="row">
-      <div className="col-lg-7 d-flex justify-content-center ">
-        <BookingAnimation />
+      <div className="col-lg-7 d-flex justify-content-center booking__iCard">
+        <Image src={Specials} alt="specials" fluid className="booking__specials" />
       </div>
       <div className="col-lg-5 mb-4">
         <div className="card">
           <div className="card-body">
-            <BookingMain />
+            <BookingDatePicker />
           </div>
         </div>
-      </div>
-      <div className="booking__iCard col-lg-2 d-flex justify-content-center">
-        <Image src={SpecialsImg} alt="specials" fluid className="booking__specials" />
       </div>
     </div>
   </section>

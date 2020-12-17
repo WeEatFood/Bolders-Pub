@@ -1,10 +1,9 @@
-import React from 'react';
-import { Container, Card, Accordion, Button } from 'react-bootstrap';
-import './styles.scss';
+import React from "react";
+import { Container, Card, Accordion, Button } from "react-bootstrap";
+import "./styles.scss";
 
 const FaqAccordion = () => (
   <div className="faq__main-container">
-    <h1>Faq</h1>
     <Container className="faq__container">
       <Accordion>
         <Card>
