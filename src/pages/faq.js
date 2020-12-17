@@ -1,6 +1,5 @@
 import React from "react";
-import { Faq } from "../components/faq";
-import { Layout, SEO } from "../components/utils";
+import { Faq, Layout, SEO } from "../components";
 
 export default () => (
   <Layout>
