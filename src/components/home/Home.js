@@ -8,17 +8,17 @@ import "./styles.scss";
 const Home = props => (
   <React.Fragment>
     <Carousel className="carousel__item-container">
-      <Carousel.Item>
+      <Carousel.Item className="carousel__item">
         <BackgroundImage
           fluid={props.data.slide1.childImageSharp.fluid}
           alt="first restaurant image"
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>-Star Magazine</h3>
-          <p>
-            This restaurant is the best in North-West Colorado! Stop by if your in the boulder area
-          </p>
+          <h3>Bolders Pub</h3>
+          {/*<p>*/}
+          {/*  This restaurant is the best in North-West Colorado! Stop by if your in the boulder area*/}
+          {/*</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,8 +28,8 @@ const Home = props => (
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>-Rolling Stones</h3>
-          <p>They got beer and lots of it!!</p>
+          {/*<h3>-Rolling Stones</h3>*/}
+          {/*<p>They got beer and lots of it!!</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,8 +39,8 @@ const Home = props => (
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          {/*<h3>Third slide label</h3>*/}
+          {/*<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -50,8 +50,8 @@ const Home = props => (
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>Fourth slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          {/*<h3>Fourth slide label</h3>*/}
+          {/*<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -1,9 +1,9 @@
-import React from 'react';
-import Img from 'gatsby-image';
-import { Title }from '../globals';
-import { Container, Jumbotron } from 'react-bootstrap';
-import { FaCartArrowDown, FaStar } from 'react-icons/fa';
-import './styles.scss';
+import React from "react";
+import Img from "gatsby-image";
+import { Title } from "../";
+import { Container, Jumbotron } from "react-bootstrap";
+import { FaCartArrowDown, FaStar } from "react-icons/fa";
+import "./styles.scss";
 
 const getCategories = items => {
   let tempItems = items.map(items => {
@@ -11,7 +11,7 @@ const getCategories = items => {
   });
   let tempCategories = new Set(tempItems);
   let categories = Array.from(tempCategories);
-  categories = ['all', ...categories];
+  categories = ["all", ...categories];
   return categories;
 };
 
@@ -28,7 +28,7 @@ export default class OnlineItems extends React.Component {
 
   handleItems = category => {
     let tempItems = [...this.state.items];
-    if (category === 'all') {
+    if (category === "all") {
       this.setState(() => {
         return { menuItems: tempItems };
       });
@@ -56,12 +56,12 @@ export default class OnlineItems extends React.Component {
             <li
               className="nav-item ml-sm-5"
               style={{
-                zIndex: '13',
-                listStyle: 'none',
-                width: '5rem',
+                zIndex: "13",
+                listStyle: "none",
+                width: "5rem",
               }}
             >
-              <span style={{ fontSize: '34px', fontWeight: 'normal', letterSpacing: '0.25px' }}>
+              <span style={{ fontSize: "34px", fontWeight: "normal", letterSpacing: "0.25px" }}>
                 Cart
               </span>
               <span>
@@ -94,9 +94,6 @@ export default class OnlineItems extends React.Component {
                     <div key={node.id} className="col-sm col-4 col-md-6 my-3 d-flex shadow w-100">
                       <div className="">
                         <Img fixed={node.image.fixed} className="online__image" />
-                        <a>
-                          <div className="mask rgba-white-slight"></div>
-                        </a>{' '}
                       </div>
                       <div className="flex-grow-1   text-center">
                         <h6 id="title" className="card-title">
@@ -164,16 +161,3 @@ export default class OnlineItems extends React.Component {
 // TODO set typechecking with proptypes for the item classes
 
 OnlineItems.propTypes = {};
-
-{
-  /*</div>*/
-}
-{
-  /*    <p className="text-muted text-left">*/
-}
-{
-  /*      <p>{node.desc.desc}</p>*/
-}
-{
-  /*    </p>*/
-}

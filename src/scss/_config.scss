@@ -117,10 +117,10 @@ $mdc-typography-styles-caption: (
 // Font mixins
 
 @mixin review-header() {
-  font-family: $comment-test-font;
-  font-size: 36px;
-  font-weight: normal;
-  letter-spacing: 0.15px;
+  font-family: $default-font-family;
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
   color: $white;
 
 }
