@@ -20,8 +20,6 @@ export default ({ data }) => {
   );
 };
 
-// bolder pub mafia
-
 export const data = graphql`
   query {
     menu: allContentfulMenuItem {
