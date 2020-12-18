@@ -8,7 +8,7 @@ import "./styles.scss";
 const Home = props => (
   <React.Fragment>
     <Carousel className="carousel__item-container">
-      <Carousel.Item>
+      <Carousel.Item className="carousel__item">
         <BackgroundImage
           fluid={props.data.slide1.childImageSharp.fluid}
           alt="first restaurant image"

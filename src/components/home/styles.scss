@@ -1,18 +1,18 @@
 @import "../../scss/config";
 
 .carousel__image {
-  min-height: 100%;
-  max-height: 100%;
+  height: 29rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) center;
+  //background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5)) center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   position: relative;
 }
 
 .carousel__caption {
-  color: #ffffff;
+  margin-top: 10em;
   transform: translateY(-100%);
 
   h3 {
@@ -66,11 +66,11 @@
 .carousel__img-container:hover .sliderz {
   //filter: blur(6px);
   opacity: 0.3;
+  background-color: rgba(57, 192, 237, 0.2);
   //filter: grayscale(50%);
   //filter: sepia(100%);
   //filter: hue-rotate(180deg);
   //filter: invert(140%);
-
 }
 
 .carousel__img-container:hover .carousel__img-btn {
