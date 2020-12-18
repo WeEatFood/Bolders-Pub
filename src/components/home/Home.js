@@ -17,7 +17,7 @@ const Home = props => (
         <Carousel.Caption className="carousel__caption">
           <h3>-Star Magazine</h3>
           <p>
-            This restaurant is the best in North-West Colorado! Stop by if your in the boulder area
+            This restaurant is the best in North-West Colorado! Stop by if you're in the Boulder area to see what we are all about.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -29,7 +29,7 @@ const Home = props => (
         />
         <Carousel.Caption className="carousel__caption">
           <h3>-Rolling Stones</h3>
-          <p>They got beer and lots of it!!</p>
+          <p>They got beer and lots of it! From local breweries to international ones, this pub will have what you're looking for.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,8 +39,8 @@ const Home = props => (
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Food Network's TOP 100 Picks</h3>
+          <p>Whether you're craving a classic beef burger, a juicy steak, or something sweet, Bolder's Pub has you covered.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -50,8 +50,8 @@ const Home = props => (
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>Fourth slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>The Critics</h3>
+          <p>The dining here is an experience unlike any other. Since opening, Bolder's Pub has felt like aparty from start to finish.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

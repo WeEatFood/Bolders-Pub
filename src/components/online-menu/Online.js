@@ -48,7 +48,7 @@ export default class OnlineItems extends React.Component {
             <Container className="info__container">
               <Title title="Order Online" />
               <figure className="figure text-start ml-5 mt-2">
-                <p className="info__subtitle lead">Here is a little more info about us.</p>
+                <p className="info__subtitle lead">Can't dine in? Take us to go.</p>
               </figure>
             </Container>
           </Jumbotron>
@@ -86,7 +86,7 @@ export default class OnlineItems extends React.Component {
                 })}
               </div>
             </div>
-            <h4>Order something nice for yourself</h4>
+            <h4>Order something nice for yourself. You deserve it!</h4>
             <div className="page">
               <div className="row ">
                 {this.state.menuItems.map(({ node }) => {
