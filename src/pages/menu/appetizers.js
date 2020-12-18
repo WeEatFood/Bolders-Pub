@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../../components/utils/layout';
-import '../../scss/appetizer.scss';
+import { Layout, MenuBar } from '../../components';
+
 import PropTypes from 'prop-types';
-import MenuBar from '../../components/globals/MenuBar';
+import '../../scss/appetizer.scss';
 
 
 const Appetizers = props => {

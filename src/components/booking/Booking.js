@@ -19,10 +19,7 @@ const Booking = () => (
       </Container>
     </Jumbotron>
     <p className="section-description pb-4 text-center">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure
-      provident voluptate esse quasi, <br />
-      veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
-      <br />
+    We want every guest at Bolder's Pub to feel welcome. While we are known for our masterful preparation<br /> in service, please feel free to give us a call if there is a matter you are uncertain of. We strive to give all our<br /> guests an exceptional experience.
     </p>
     <div className="row">
       <div className="col-lg-7 d-flex justify-content-center booking__iCard">

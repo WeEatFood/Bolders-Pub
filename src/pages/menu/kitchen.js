@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../scss/kitchen.scss'
-import PropTypes from 'prop-types';
 import {Layout, MenuBar} from '../../components'
+import PropTypes from 'prop-types';
+import '../../scss/kitchen.scss'
 
 const Kitchen = props => {
   return (

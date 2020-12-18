@@ -39,7 +39,7 @@ const Home = props => (
           className="carousel__image"
         />
         <Carousel.Caption className="carousel__caption">
-          <h3>Food Network's TOP 100 Picks</h3>
+          <h3>Food Network</h3>
           <p>Whether you're craving a classic beef burger, a juicy steak, or something sweet, Bolder's Pub has you covered.</p>
         </Carousel.Caption>
       </Carousel.Item>
